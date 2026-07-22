@@ -1,0 +1,1125 @@
+{
+  "schema": "src-verification/1",
+  "erzeugt_am": "2026-07-20",
+  "owner": "requirements-analyst",
+  "zweck": "Manuelle Einzelpruefung der EXPLICIT-Zellen, die sich auf SRC-001..SRC-004 berufen, gegen die am 2026-07-20 ausserhalb des Repositories aufgefundenen Quelldokumente. Diese Datei bestaetigt nichts und setzt keinen Status.",
+  "gesamtstatus_unveraendert": "BLOCKED_TRACEABILITY",
+  "true_line_status": "pending-watcher",
+  "wired_in_prod": "no",
+  "evidence_class": "none",
+  "self_certified": false,
+  "quellen": {
+    "SRC-001": {
+      "pfad": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md",
+      "bytes": 24585,
+      "mtime": "2026-07-18T02:52",
+      "sha256": "d0a6adf4e1f2be843eb9e93896164755cd417bdd591c1bd415e9c8dc2874f0d3",
+      "rang": "kanonisch"
+    },
+    "SRC-002": {
+      "pfad": "/Users/vincentschnetzer/Desktop/docs/REVYR-Plan-PRD.md",
+      "bytes": 10525,
+      "mtime": "2026-07-16T23:51",
+      "sha256": "37e090aafac7a3c7278c61164cb342018dea7530c995f73f7f5add220fd16542",
+      "rang": "kanonisch"
+    },
+    "SRC-003": {
+      "pfad": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md",
+      "bytes": 61117,
+      "mtime": "2026-07-18T02:52",
+      "sha256": "c3ceb46fa52c487530546370fc6682e6df7e7b66b35f4c6eb55a4b3e77e3764d",
+      "rang": "kanonisch"
+    },
+    "SRC-004": {
+      "pfad": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-tracking-and-planned-routes.md",
+      "bytes": 78355,
+      "mtime": "2026-07-10T03:19",
+      "sha256": "dc18a97d9fe2299662933120391207264ecbb40d16bc98a129e545a9f37bc25f",
+      "rang": "kanonisch"
+    }
+  },
+  "pruefumfang": {
+    "grundgesamtheit": 131,
+    "geprueft": 131,
+    "ungeprueft": 0,
+    "nicht_teil_dieser_pruefung": {
+      "explicit_ohne_src_angabe": 85,
+      "begruendung": "Diese Zellen nennen keine Quelle; es gibt nichts, wogegen geprueft werden koennte. Sie bleiben BLOCKER beim Owner PRD/Canvas/Vision."
+    }
+  },
+  "ergebnis": {
+    "BELEGT": 109,
+    "TEILBELEGT": 17,
+    "UNBELEGT": 5
+  },
+  "ergebnis_je_artefakt": {
+    "docs/canvas/revyr-endurance-platform.canvas.md": {
+      "BELEGT": 77,
+      "TEILBELEGT": 8,
+      "UNBELEGT": 5,
+      "gesamt": 90
+    },
+    "docs/prd/revyr-endurance-platform.prd.md": {
+      "BELEGT": 24,
+      "TEILBELEGT": 7,
+      "UNBELEGT": 0,
+      "gesamt": 31
+    },
+    "docs/vision/revyr-endurance-platform.vision.md": {
+      "BELEGT": 8,
+      "TEILBELEGT": 2,
+      "UNBELEGT": 0,
+      "gesamt": 10
+    }
+  },
+  "zellen": [
+    {
+      "zelle": "CAN-013",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 141,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:47 'Bestehende Tracker liefern Zahlen ohne Bedeutung (Was heisst \"Belastung 82\"?)'"
+    },
+    {
+      "zelle": "CAN-014",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 142,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:47 'Social-Features ohne echte Naehe (Kudos von Fremden)'; bestaetigt /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:60"
+    },
+    {
+      "zelle": "CAN-015",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 143,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:47 'keinerlei Grund, sich real zu treffen'"
+    },
+    {
+      "zelle": "CAN-023",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 150,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:51 'Primaer: Freizeit-Laeufer:innen und Radfahrer:innen (20-45)'"
+    },
+    {
+      "zelle": "CAN-024",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 151,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:51 'Radfahrer:innen' (Freizeit) + /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:52 'Ambitionierte Rennradfahrer'. Beide Haelften stehen in SRC-001, aber in ZWEI Aufzaehlungspunkten - die Herkunftsangabe 'Aufzaehlungspunkt 1' deckt nur die Freizeit-Haelfte."
+    },
+    {
+      "zelle": "CAN-025",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 152,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:52 'Ambitionierte Rennradfahrer und Laeufer mit festen Strecken und Leistungsfokus'. Hinweis: der Registry-Zusatz 'mit Wearables oder externen Sensoren' (USER-004) steht dort NICHT - SRC-001 sagt 'mit festen Strecken und Leistungsfokus'."
+    },
+    {
+      "zelle": "CAN-026",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 153,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:52 'bestehende Gruppen/Lauftreffs/Vereine'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:138 Persona 'Lauftreff TSV Nord'. 'Gruppen' ist unqualifiziert und schliesst Radsportgruppen nicht aus."
+    },
+    {
+      "zelle": "CAN-027",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 154,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "'Vereine' belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:52 'bestehende Gruppen/Lauftreffs/Vereine, die ein digitales Zuhause suchen'. FEHLT: 'lokale Communities' als eigene ZIELNUTZER-Kategorie. Der Begriff kommt in SRC-001 nur als Produktziel vor (/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:13 'reale lokale Sportnetzwerke', :60 'echte lokale Gemeinschaft'), nicht in der Kernzielgruppe 2.2. Die im Canvas notierte OPEN QUESTION bleibt offen."
+    },
+    {
+      "zelle": "CAN-039",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 176,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:60 'Gegen Strava: echte lokale Gemeinschaft ... statt anonymer Kudos'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:54 'Strava: nur Segmente'"
+    },
+    {
+      "zelle": "CAN-040",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 177,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:59 'Gegen Whoop/Garmin'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:53 'Whoop/Garmin: Blackbox + Abo'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:59 'Garmin: nur mit Geraet'. Hinweis: die Quellen sagen 'Garmin', nicht 'Garmin Connect' - der Produktzusatz ist eine Ergaenzung des Canvas."
+    },
+    {
+      "zelle": "CAN-041",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 178,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "UNBELEGT",
+      "fundstelle_oder_grund": "'Apple Fitness' kommt in KEINER der vier Quellen vor (Volltextsuche 2026-07-20). 'Apple' erscheint ausschliesslich als Plattform/Dienst: Sign in with Apple, HealthKit, Apple Maps, Apple Watch - nie als Wettbewerber. Die Wettbewerberliste von SRC-001/SRC-003 nennt Whoop, Garmin und Strava. HERABSTUFUNG auf ASSUMPTION oder MISSING erforderlich (Owner Canvas)."
+    },
+    {
+      "zelle": "CAN-042",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 179,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "UNBELEGT",
+      "fundstelle_oder_grund": "'Fitbit' kommt in KEINER der vier Quellen vor (Volltextsuche 2026-07-20). 'Google' erscheint nur als Auth-Anbieter, Play Store und Kartenanbieter, nie als Wettbewerber. HERABSTUFUNG erforderlich (Owner Canvas)."
+    },
+    {
+      "zelle": "CAN-043",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 180,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:59 'Gegen Whoop/Garmin: erklaerbare Health-Insights ohne Abo und Zusatzhardware'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:53"
+    },
+    {
+      "zelle": "CAN-044",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 181,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Die Entitaet ist belegt (/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:52 'bestehende Gruppen/Lauftreffs/Vereine'), aber SRC-001 fuehrt sie als ZIELGRUPPE, nicht als 'Current Alternative'. Als Status quo benennt SRC-001 ausdruecklich das WhatsApp-Chaos (/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:138), nicht den Verein. Die Umrahmung als Wettbewerbsalternative stammt vom Canvas, nicht aus der Quelle."
+    },
+    {
+      "zelle": "CAN-045",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 182,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:138 'Der Lauftreff \"TSV Nord\" (12 Personen): trifft sich real, organisiert ueber WhatsApp-Chaos' - ausdruecklich der heutige Loesungsweg."
+    },
+    {
+      "zelle": "CAN-046",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 183,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "UNBELEGT",
+      "fundstelle_oder_grund": "'Lokale Event-Plattformen' kommen in KEINER der vier Quellen vor (Volltextsuche 'Event-Plattform', 'Eventplattform', 'Meetup' 2026-07-20). SRC-003 fuehrt lokale Events ausschliesslich als EIGENES Feature (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:382, Plan 14), nicht als Alternative. Der bereits notierte MISSING-Vermerk des Canvas betraf nur Staerke/Luecke - tatsaechlich fehlt die Alternative selbst. HERABSTUFUNG erforderlich (Owner Canvas)."
+    },
+    {
+      "zelle": "CAN-047",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 189,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:53 'Zwei gleichberechtigte Sport-Welten: Run und Bike mit je eigener Oberflaeche, Metrik und Wertung'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:108 'Eine Architektur, zwei Erlebnisse'"
+    },
+    {
+      "zelle": "CAN-048",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 190,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:159 T-01 'Modus A: Start mit einem Tipp -> GPS, Distanz, Zeit, Pace/Speed, Live-Karte'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:145"
+    },
+    {
+      "zelle": "CAN-049",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 191,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:161 T-03 'Hintergrund-Tracking (Bildschirm gesperrt), Crash-Recovery'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:458 Task 2.2, /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:460 Task 2.4"
+    },
+    {
+      "zelle": "CAN-050",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 192,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:160 T-02 'Route per Wegpunkte planen oder km-Ziel'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:163 T-05 'Routen speichern/wiederverwenden'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:463 Task 2.7"
+    },
+    {
+      "zelle": "CAN-051",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 193,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "'Restdistanz' belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:160 T-02 'geplante vs. verbleibende km'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:682 GATE A 'verbleibende km korrekt'. FEHLT der tragende Qualifier 'echte routebezogene': weder SRC-001 noch SRC-003 sagt etwas ueber das Berechnungsverfahren. WIDERSPRUCH ZUR VIERTEN QUELLE: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-tracking-and-planned-routes.md:416-418 spezifiziert 'remainingDistanceMeters = Math.max(0, plannedMeters - coveredMeters)' und der Test /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-tracking-and-planned-routes.md:382 heisst woertlich 'subtracts covered from planned' - also genau die einfache Distanzsubtraktion, die das Canvas-Item ausschliesst. Die Verschaerfung stammt aus DEC-004/SRC-005, nicht aus SRC-001/SRC-003."
+    },
+    {
+      "zelle": "CAN-052",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 194,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "'Erklaerbarer Health-Score' belegt und woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:147 H-02 'Erklaerbarer Belastungs-Score ... Warum-Sheet mit konkreten Gruenden'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:149. FEHLT: 'Fallback und Confidence'. Der Begriff 'Confidence' kommt in KEINER der vier Quellen vor; 'Fallback' nur fuer Wegpunkt-Routing (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:161) und OSM-Namen (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:584), nie fuer den Health-Score."
+    },
+    {
+      "zelle": "CAN-053",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 195,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:21 'Spuerbaren Fortschritt - Punkte, Raenge, Avatare, Seasons'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:179 Epic A 'Avatare & Progression'"
+    },
+    {
+      "zelle": "CAN-054",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 196,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:88 und :177 M-05 'Wochenrueckblick'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:353 'Wochenrueckblick sonntags, Season-Rueckblick quartalsweise'"
+    },
+    {
+      "zelle": "CAN-055",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 197,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:34 'Verdienter Status | Avatare, Trikots, Raenge nur durch Leistung - niemals kaufbar'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:169 'Grundgesetz: Jedes Avatar-Element ist ein Beweis echter Leistung'"
+    },
+    {
+      "zelle": "CAN-056",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 198,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:191 S-01 Auth; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:92 'Accounts/Backend ... (v2.0)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:437"
+    },
+    {
+      "zelle": "CAN-057",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 199,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:192 S-02 'Sichtbarkeit oeffentlich/Follower/privat, Standard privat'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:365-372 Sichtbarkeits-Matrix"
+    },
+    {
+      "zelle": "CAN-058",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 200,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:167 T-09 'Neue-Strecke-Erkennung + Empfehlung (Chips + Freitext) an Follower'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:162-164"
+    },
+    {
+      "zelle": "CAN-059",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 201,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:196 S-06 'Melden + Blockieren ..., Moderations-Queue'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:383"
+    },
+    {
+      "zelle": "CAN-060",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 202,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:198-208 Epic G; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:207 G-06 'Team-Suche (Umkreis, O-Pace, Revier)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:177-200"
+    },
+    {
+      "zelle": "CAN-061",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 203,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:210 G-09 'Wochen-Challenges (Einzel/Team x Run/Bike)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:321"
+    },
+    {
+      "zelle": "CAN-062",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 204,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:208 G-07 'Punkte/Rankings (Radius 5-50 km, Stadt; strikt sport-getrennt)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:560"
+    },
+    {
+      "zelle": "CAN-063",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 205,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:209 G-08 'Anti-Cheat serverseitig'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:559 Task 10.2"
+    },
+    {
+      "zelle": "CAN-064",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 206,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:219 R-01 'Teams = Areal-Besitz'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:215 'Team-Ebene = Areal-Besitz'"
+    },
+    {
+      "zelle": "CAN-065",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 207,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:228 R-10 'Einzel-Revier-Eroberung (emergent)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:219-268"
+    },
+    {
+      "zelle": "CAN-066",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 208,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:226 R-08 'Seasons (Quartal)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:308-315"
+    },
+    {
+      "zelle": "CAN-067",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 209,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:240 L-05 'Lokale Events: erstellen/entdecken/teilnehmen + Moderation'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:382"
+    },
+    {
+      "zelle": "CAN-068",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 210,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:232-239 Epic L 'Live & Safety'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:376-380"
+    },
+    {
+      "zelle": "CAN-069",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 211,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:244 W-01 'Apple-Watch-/Wear-OS-Companion'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:146 H-01 'BLE-Gurt'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:623"
+    },
+    {
+      "zelle": "CAN-070",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 212,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:244 W-03 'erklaerbarer, regelbasierter KI-Coach (§29) + Audio-Coach (deaktivierbar)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:629"
+    },
+    {
+      "zelle": "CAN-072",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 231,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:132 'kein Medizinprodukt'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:96 'nie Diagnose/Anweisung'"
+    },
+    {
+      "zelle": "CAN-073",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 232,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:99 'Sturzerkennung als Assistenz formuliert, nie als garantierter Schutz'"
+    },
+    {
+      "zelle": "CAN-074",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 233,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:132 'kein Chat-Messenger'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:92 'Nie im Plan: ... Chat'"
+    },
+    {
+      "zelle": "CAN-075",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 234,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:132 'kein Marktplatz/Kaufkosmetik'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:92 'kaufbare Avatare/Boosts'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:34 'niemals kaufbar'"
+    },
+    {
+      "zelle": "CAN-076",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 235,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:132 'keine Indoor-/Gym-Workouts (nur Run & Bike)'"
+    },
+    {
+      "zelle": "CAN-077",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 236,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:132 'kein Web-Client (ausser Beschuetzer-Link)'"
+    },
+    {
+      "zelle": "CAN-078",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 237,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:219 R-01 'H3-Raster nur interne Recheneinheit, nie sichtbar'; bestaetigt /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:211"
+    },
+    {
+      "zelle": "CAN-079",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 238,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:92 'Territory, Seasons, Live-Map ... (v4.0)'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:88 MVP-Scope v1.0 fuehrt kein Territory"
+    },
+    {
+      "zelle": "CAN-080",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 244,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:124 'iOS (App Store) + Android (Play Store), eine Codebasis'"
+    },
+    {
+      "zelle": "CAN-081",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 245,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "'Expo/React Native/TypeScript' belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:124; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:391 'Expo (React Native, TypeScript strict)'. TEILWEISE: native Dev-Builds sind in SRC-003 NUR fuer Background-Tracking gefordert (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:453 'Plan 2: Robustes Tracking (braucht Expo Dev-Build)', /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:457 'EAS-Dev-Build'). Fuer HEALTH- und WIDGET-Funktionen sagt keine Quelle, dass ein Dev-Build noetig ist."
+    },
+    {
+      "zelle": "CAN-082",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 246,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:125 'Deutsch (Launch), i18n-vorbereitet'"
+    },
+    {
+      "zelle": "CAN-083",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 247,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:257 'Store-Compliance | Matrix in Gesamtplan Abschnitt 8 ist verbindlicher Teil dieses PRD'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:635-654"
+    },
+    {
+      "zelle": "CAN-084",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 248,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:254 'Privacy/DSGVO | EU-Hosting, Standard privat, In-App-Loeschung vollstaendig, Datenexport'"
+    },
+    {
+      "zelle": "CAN-085",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 249,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:640 'Standort Background | A/2 | Background Mode location + Always-Begruendung | Foreground-Service mit Notification; Play-Standort-Formular'"
+    },
+    {
+      "zelle": "CAN-086",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 250,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:641 'Health-Daten | A/3 | HealthKit: jede Leseart einzeln begruendet'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:471 Task 3.1 'Berechtigungen einzeln begruendet'"
+    },
+    {
+      "zelle": "CAN-087",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 251,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:660 'Reales Verhalten auf echter Hardware zaehlt'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:674-675 Ledger-Zeilen 'iOS geprueft'/'Android geprueft'; Gates A-E"
+    },
+    {
+      "zelle": "CAN-088",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 252,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Health-Datenminimierung belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:97 'Health-Daten: nie Werbung, nie Dritt-Analytics, lokal wo moeglich'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:715 Risiko 22 'Datensparsamkeit: nur aggregierte Plausibilitaets-Signale zum Server, nie Rohverlaeufe'. FEHLT: der Begriff 'Zweckbindung' kommt in KEINER Quelle vor, und fuer STANDORT-Daten formuliert keine Quelle ein Zweckbindungs-/Minimierungsprinzip (nur Start-/Endpunkt-Unschaerfe, /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:378)."
+    },
+    {
+      "zelle": "CAN-089",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 253,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:263-264 'Backend-Wahl: Prototyp-Entscheid'/'Karten-/Routing-Anbieter: Kosten-ADR vor v2.0'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:397 und /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:428 'Anbieter-Review vor Stufe B -> ADR'"
+    },
+    {
+      "zelle": "CAN-090",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 254,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:262 'Namensfindung erweitern + professionelle Recherche (DPMA/EUIPO/USPTO) - Blocker fuer GATE A'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:32 'Bis dahin bleibt REVYR reiner Arbeitstitel'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:682 GATE A 'Name markenrechtlich geklaert'"
+    },
+    {
+      "zelle": "CAN-098",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 262,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:395-397 '5.2 Backend (Entscheid in Plan 6.0)' mit Auth, Geo-Queries, Realtime, EU-Region; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:737 'Backend | Entscheid in 6.0'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:263"
+    },
+    {
+      "zelle": "CAN-100",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 277,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:695 Risiko 2 'GPS-Drift + Batterie (Bike: hohes Tempo)'"
+    },
+    {
+      "zelle": "CAN-101",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 278,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:695 Risiko 2; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:465 Task 2.9 'Batterie-Messlauf 1 h je Sport + Plattform'"
+    },
+    {
+      "zelle": "CAN-102",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 279,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:700 Risiko 7 'Health-Claims als Medizinprodukt wertbar'"
+    },
+    {
+      "zelle": "CAN-103",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 280,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:708 Risiko 15 'Namens-/Markenkollision'"
+    },
+    {
+      "zelle": "CAN-104",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 281,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:701 Risiko 8 'Gefaelschte Tracks zerstoeren Rankings/Areale'"
+    },
+    {
+      "zelle": "CAN-105",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 282,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:704 Risiko 11 'Live Location = Stalking-Risiko'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:713 Risiko 20"
+    },
+    {
+      "zelle": "CAN-106",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 283,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:717 Risiko 24 'Dynamische Revier-Geometrie (Polygon-Union/-Beschnitt) komplex und fehleranfaellig'"
+    },
+    {
+      "zelle": "CAN-107",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 284,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:716 Risiko 23 'OSM-Datenqualitaet Sportplaetze (fehlend/falsch geschnitten)'"
+    },
+    {
+      "zelle": "CAN-108",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 285,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:706 Risiko 13 'Store-Ablehnung (Background-Location, Health, UGC, Live)'"
+    },
+    {
+      "zelle": "CAN-109",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 286,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:265 'Fehlende Sensoren allein sind kein Betrug, senken aber die Beweiskraft'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:559 Task 10.2 'fehlende Sensoren allein != Betrug'. Hinweis: die Aussage steht als Schutzregel, nicht als eigene Zeile im Risikoregister von SRC-003."
+    },
+    {
+      "zelle": "CAN-110",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 287,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "UNBELEGT",
+      "fundstelle_oder_grund": "'Private oder gesperrte Sportanlagen' kommen in KEINER der vier Quellen vor (Volltextsuche 2026-07-20). SRC-003 Risiko 23 (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:716) betrifft ausschliesslich die OSM-DATENQUALITAET (fehlende/falsch geschnittene Plaetze) und nennt als Gegenmassnahme 'Kuratierung + Community-Meldung (Platz fehlt)' - nicht die Zugaenglichkeit oder den Rechtsstatus einer Anlage. Das sind zwei verschiedene Risiken. HERABSTUFUNG erforderlich (Owner Canvas)."
+    },
+    {
+      "zelle": "CAN-111",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 293,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "'Unit-Tests der Domainlogik' belegt: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:392 'src/domain/ pure Logik (alle Formeln ... testbar & simulierbar)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:585 Task 12.3 'vollstaendig unit-getestet'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:666 Ledger-Zeile 'Unit-/Component-Tests'. FEHLT: 'Property-Tests' kommt in KEINER der vier Quellen vor."
+    },
+    {
+      "zelle": "CAN-112",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 294,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "UNBELEGT",
+      "fundstelle_oder_grund": "'Integrationstest' kommt in KEINER der vier Quellen vor (Volltextsuche 2026-07-20). Die Nachweisarten von SRC-003 (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:664-676) sind Unit-/Component-Tests, Smoke Test, echtes Geraet, GPS real, Run-/Bike-Modus, iOS/Android - kein Integrationstest. HERABSTUFUNG erforderlich (Owner Canvas)."
+    },
+    {
+      "zelle": "CAN-113",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 295,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "FALSCH VERANKERT. 'Referenzstrecke' steht NICHT in SRC-003, sondern in SRC-001 (/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:250 'Distanzabweichung < 3 % auf bekannter Referenzstrecke') und in SRC-002 (/Users/vincentschnetzer/Desktop/docs/REVYR-Plan-PRD.md:127 'Referenzstrecken-Messung, Ledger'). Die Aussage ist belegt - aber nicht in der beanspruchten Quelle. Korrektur der SRC-Angabe erforderlich (Owner Canvas); dies ist keine inhaltliche Herabstufung."
+    },
+    {
+      "zelle": "CAN-114",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 296,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:660 'Run und Bike werden getrennt nachgewiesen'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:672-675 Ledger-Zeilen 'Run-Modus geprueft'/'Bike-Modus geprueft'/'iOS geprueft'/'Android geprueft'"
+    },
+    {
+      "zelle": "CAN-115",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 297,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:458 Task 2.2 '30 min, Bildschirm gesperrt, lueckenlos'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:460 Task 2.4 'App-Kill ohne Punktverlust'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:682 GATE A"
+    },
+    {
+      "zelle": "CAN-116",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 298,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:465 Task 2.9 'Batterie-Messlauf 1 h je Sport + Plattform | Ledger mit Messwerten'"
+    },
+    {
+      "zelle": "CAN-117",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 299,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:471 Task 3.1 'HF-Verlauf echter Aktivitaet, iOS + Android'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:472 Task 3.2 'realer Gurt aufgezeichnet'"
+    },
+    {
+      "zelle": "CAN-118",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 300,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:626 Task 16.0 'Juristische Claims-Pruefung -> freigegebene Sprachliste (Blocker)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:686 GATE E"
+    },
+    {
+      "zelle": "CAN-119",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 301,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:363 'Sichtbarkeits-Matrix (Testtabelle in Plan 7)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:522 Task 7.3 'Matrix als Testtabelle, jede Zeile geprueft'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:683 GATE B"
+    },
+    {
+      "zelle": "CAN-120",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 302,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:602 Task 13.1 'Threat-Model Standortfreigabe ... Dokument extern gegengeprueft'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:685 GATE D 'Safety-Modell extern geprueft'"
+    },
+    {
+      "zelle": "CAN-121",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 303,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:558 Task 10.1 'Effort-/Punkteformel + Simulation'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:583 Task 12.1 'Pflicht-Simulation der Eroberungsformel'"
+    },
+    {
+      "zelle": "CAN-122",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 304,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:654 'Review-Risiko-Check | jede Einreichung | TestFlight-Vorabtest | Internal Testing Track'"
+    },
+    {
+      "zelle": "CAN-123",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 305,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:660 'Kein Task ist fertig ohne Ledger-Eintrag (docs/EVIDENCE-LEDGER.md, neueste oben)'"
+    },
+    {
+      "zelle": "CAN-124",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 311,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:106 'v1.0 | W4-Retention der Tracker-Nutzer | > 30 %'. BEFUND: SRC-001 nennt den Zielwert SEHR WOHL - der Canvas-Vermerk 'Der Canvas selbst nennt keinen Zielwert (MISSING im Canvas)' unterschaetzt die jetzt vorliegende Beleglage."
+    },
+    {
+      "zelle": "CAN-125",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 312,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:107 'v1.0 | Stimmungs-Check-in-Quote nach Aktivitaet | > 50 %'"
+    },
+    {
+      "zelle": "CAN-126",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 313,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:108 'v1.0 | \"Warum?\"-Aufrufe am Belastungs-Score | > 25 % der Auswertungen'"
+    },
+    {
+      "zelle": "CAN-127",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 314,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:110 'v3.0 | Anteil Nutzer in einem Team nach 60 Tagen | > 25 %'"
+    },
+    {
+      "zelle": "CAN-128",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 315,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:111 'v3.0 | Teams mit >= 1 gemeinsamer (realer) Aktivitaet/Woche | > 40 %'"
+    },
+    {
+      "zelle": "CAN-129",
+      "artefakt": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "zeile": 316,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:112 'v4.0 | Season-Teilnahmequote aktiver Teams | > 60 %'"
+    },
+    {
+      "zelle": "Problem Statement",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 63,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:47 Hauptproblem (Daten ohne Bedeutung, Social ohne Naehe); Reihenfolgeaussage: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:44-47 'Prioritaetenordnung (verbindlich): 1. Health zuerst ... 2. Challenges & Spiel 3. Social & Live'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:432-442 Release-Fahrplan"
+    },
+    {
+      "zelle": "USER-001",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 69,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:51 Primaerzielgruppe; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:136 Persona Lena 'will verstehen, ob sie sich verbessert und nicht mehr allein laufen. Kernbeduerfnis: erklaerte Auswertung + lokales Team in ihrer Pace'"
+    },
+    {
+      "zelle": "USER-002",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 70,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:137 Persona Markus 'feste Stammstrecken, Sensoren, Leistungsvergleich. Kernbeduerfnis: Streckenrekorde, Hoehenprofil, Trittfrequenz, faire Bike-Wertung' - 'faire Bike-Wertung' woertlich; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:124-132"
+    },
+    {
+      "zelle": "USER-003",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 71,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:138 Persona Lauftreff TSV Nord 'Kernbeduerfnis: Teamprofil, gemeinsame Termine, gemeinsamer Fortschritt, Revier-Stolz'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:52"
+    },
+    {
+      "zelle": "REQ-001",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 175,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Kern belegt und woertlich: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:136 'Globaler sport-mode-store + Konfigurationsobjekt je Sportart - Screens lesen Config, keine doppelten Screens'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:462 Task 2.6 'beide Modi nutzen Config, kein Hardcoding'. FEHLT: 'VERSIONIERTE Konfigurationsobjekte'. 'versioniert' erscheint in SRC-003 nur fuer DB-Migrationen (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:510), nie fuer Sport-Konfigurationen."
+    },
+    {
+      "zelle": "REQ-002",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 176,
+      "beanspruchte_src": "SRC-001/SRC-004",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:159 T-01 'Modus A: Start mit einem Tipp -> GPS, Distanz, Zeit, Pace/Speed, Live-Karte'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-tracking-and-planned-routes.md:5 Goal; sportgerechte Kernmetrik /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:114 'Kernmetrik RUN Pace / BIKE Geschwindigkeit'"
+    },
+    {
+      "zelle": "REQ-003",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 177,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:458 Task 2.2 (Hintergrund, gesperrter Bildschirm), /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:460 Task 2.4 (Crash-Recovery), /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:461 Task 2.5 (Pause/Auto-Pause sport-spezifisch), /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:120 Auto-Pause-Schwellen je Sport"
+    },
+    {
+      "zelle": "REQ-006",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 180,
+      "beanspruchte_src": "SRC-001/SRC-004",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:160 T-02 'Route per Wegpunkte planen oder km-Ziel'; Routingprofil /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:117 'foot-walking / cycling-regular'; Pruefung vor Start /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-tracking-and-planned-routes.md:2409 'Route berechnen -> Geplante Strecke: X km erscheint -> Start'"
+    },
+    {
+      "zelle": "REQ-009",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 183,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "HF-Quellen belegt und woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:146 H-01 'Herzfrequenz live + Verlauf + O via HealthKit / Health Connect / BLE-Gurt'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:148. FEHLT: 'Quelle sowie Datenluecken transparent kennzeichnen' - weder SRC-001 noch SRC-003 verlangt eine Kennzeichnung der HF-Quelle oder der Datenluecken."
+    },
+    {
+      "zelle": "REQ-011",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 185,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:148 H-03 'HF-Zonen (geschaetzt, manuell korrigierbar) + optionale Live-Zonen-Ansage | Ansage deaktivierbar'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:150; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:478 Task 3.8 'deaktivierbar | Schalter wirkt'"
+    },
+    {
+      "zelle": "REQ-012",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 186,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Check-in und Korrelation belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:149 H-04 'Stimmungs-Check-in (1 Emoji-Tap) + Korrelations-Karten ab 4 Wochen | Check-in < 2 s'. FEHLT: 'mit Unsicherheit dargestellt'. SRC-001 fordert keine Unsicherheitsdarstellung; SRC-003 (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:151) ebenfalls nicht."
+    },
+    {
+      "zelle": "REQ-013",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 187,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:151 H-06 'Health-Home: Wochenzustand als oberstes Home-Element'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:150 H-05 'Steigerungs-Warnung (Woche vs. 4-Wochen-O, > 30 %) | Orientierungssprache'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:152-153"
+    },
+    {
+      "zelle": "REQ-015",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 189,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:183 A-01 Basis-Avatar-Editor; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:184 A-02 'Items nur durch definierte Leistungen ... nichts kaufbar'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:185 A-03 Team-Harness/Season-Sieger-Designs; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:167-175"
+    },
+    {
+      "zelle": "REQ-016",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 190,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Recaps/Erfolgskarten/Live-Status belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:177 M-05, /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:194 S-04, /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:165 T-07 'Live Activity/Dynamic Island (iOS) + Widget/Notification (Android)'. FEHLT: 'ohne sensible Start-/Endpunkte offenzulegen'. Start-/Endpunkt-Unschaerfe fordern die Quellen ausschliesslich fuer die LIVE-POSITION (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:372, :378), nicht fuer Rueckblicke, Erfolgskarten oder Widgets."
+    },
+    {
+      "zelle": "REQ-017",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 191,
+      "beanspruchte_src": "SRC-001/SRC-003 + CONTRA-005",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Kern belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:191 S-01 'Auth: E-Mail + Sign in with Apple + Google; Offline-first-Sync; Migration lokaler Daten'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:195 S-05 'Account-Loeschung in-App, vollstaendig'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:509-513 Tasks 6.2/6.4/6.5/6.6. Der Loeschumfang ist korrekt separat CONTRA-005 zugeschrieben, nicht den Quellen."
+    },
+    {
+      "zelle": "REQ-018",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 192,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:192 S-02 'Standard privat'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:193 S-03 Follow/Anfrage; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:196 S-06 'Melden + Blockieren auf jedem Element, Moderations-Queue, Regeln + Erst-Zustimmung, Wortfilter'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:374, /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:383"
+    },
+    {
+      "zelle": "REQ-019",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 193,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Nahezu woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:167 T-09 'Neue-Strecke-Erkennung + Empfehlung (Chips + Freitext) an Follower; Uebernahme mit 1 Tipp'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:162-164 'Neue-Strecke-Erkennung ... Besonderheiten-Chips + Freitext ... Post an Follower ... mit einem Tipp uebernehmen'. 'Berechtigte' Follower: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:193 S-03 'Feed zeigt nur Erlaubtes'. HINWEIS: der Vision-Anker ist davon unberuehrt - siehe Sonderbefund REQ-019 in docs/SOURCE-MAP.md."
+    },
+    {
+      "zelle": "REQ-020",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 194,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:202 G-01 'Team-Gruendung ab 2 (Transaktion Team+Admin)'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:203 G-02 Einladungslink/QR; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:179 'eine Transaktion legt teams + team_members (role: admin) an - nie ein Team ohne Admin'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:187"
+    },
+    {
+      "zelle": "REQ-021",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 195,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:204 G-03, /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:205 G-04, /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:206 G-05 'Aktiv-Definition (>= 1 Aktivitaet/28 Tage)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:189-198 Wachstums-Maschine"
+    },
+    {
+      "zelle": "REQ-022",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 196,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:211 G-10 'Gemeinsame Aktivitaet als pure Funktion (Zeit +-, Naehe >= X %, >= 2 Mitglieder)'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:240 L-05; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:381; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:616 Task 14.4"
+    },
+    {
+      "zelle": "REQ-023",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 197,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Effort-Normalisierung und Simulation belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:174 M-02 'Effort-Normalisierung ... (Start: Run 1,0 / Bike 0,4; Kalibrierung per Simulation)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:128. Sporttrennung intern: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:128 'Rein sportinterne Wertungen bleiben in echten km'. FEHLT: 'VERSIONIERTE' Effort-Faktoren - identische Luecke wie bei VIS-008 und REQ-001; keine Quelle verlangt eine Versionierung der Faktoren."
+    },
+    {
+      "zelle": "REQ-025",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 199,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:210 G-09 'Wochen-Challenges + idempotente Belohnungen | Doppel-Reward ausgeschlossen'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:208 G-07 'strikt sport-getrennt'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:569 Task 11.2 'serverkonfigurierbar'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:562 Task 10.5 'idempotent'"
+    },
+    {
+      "zelle": "REQ-026",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 200,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:220 R-02 Eroberungsformel mit Quorum; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:219 R-01 'H3-Raster nur interne Recheneinheit, nie sichtbar'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:227 R-09 Karten-Performance; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:273-291; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:586 Task 12.4 'nur verified'"
+    },
+    {
+      "zelle": "REQ-027",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 201,
+      "beanspruchte_src": "SRC-001/SRC-003 + CONTRA-005",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Kern belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:226 R-08 'Reset nur Spielbrett; season_records unveraenderlich; Vereinsheim ...; Zeitreise-Kartenmodus'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:310-315 'Reset betrifft nur das Spielbrett - Geschichte wird nie geloescht'. Die Loeschungs-/Anonymisierungsausnahme ist korrekt CONTRA-005 zugeschrieben."
+    },
+    {
+      "zelle": "REQ-030",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 204,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:237 L-02 'Opt-in pro Aktivitaet, erzwungenes Zeitlimit, Sichtbarkeitsstufen, Indikator, Not-Aus, Start-/Endpunkt-Unschaerfe; endet in allen Pfaden (auch App-Kill)'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:238 L-03 'Link live, endet automatisch'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:378-379"
+    },
+    {
+      "zelle": "REQ-031",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 205,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Assistenz-Charakter, Countdown und Fehlalarmquote belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:239 L-04 'Muster -> Countdown -> Notfallkontakt + Standort; Assistenz-Sprache | Falltest + dokumentierte Fehlalarmquote'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:380 'nie Garantie'. FEHLT: die ausdrueckliche 'Abbruchmoeglichkeit'. Keine Quelle sagt, dass der Countdown abgebrochen werden kann - das ist eine naheliegende, aber nicht belegte Ergaenzung."
+    },
+    {
+      "zelle": "REQ-032",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 206,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Geraete und Matrix belegt: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:244 W-01/W-02/W-05 'Kompatibilitaetsmatrix dokumentiert'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:623 Task 15.4. FEHLT: die GATING-Regel 'duerfen ERST NACH dokumentierter Kompatibilitaetsmatrix freigeschaltet werden'. In den Quellen ist die Matrix ein Task innerhalb von Plan 15, keine vorgelagerte Freigabebedingung."
+    },
+    {
+      "zelle": "REQ-033",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 207,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:153 H-08 'erst nach Claims-Freigabe (Sprach-Whitelist, Lint-Check)'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:244 W-03 'erklaerbarer, regelbasierter KI-Coach ... (deaktivierbar)'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:626 Task 16.0 'Blocker'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:629 Task 17.4 'Zyklus-bewusst (Opt-in ...)'"
+    },
+    {
+      "zelle": "REQ-034",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 208,
+      "beanspruchte_src": "SRC-001/SRC-003 + CONTRA-004/005/006",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Kern nahezu woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:254 'EU-Hosting, Standard privat, In-App-Loeschung vollstaendig, Datenexport, Health-Daten nie Werbung/Dritt-Analytics'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:255 'Sichere Auth (Apple/Google/E-Mail), Rate Limiting, serverseitige Validierung aller Eingaben, Row-Level-Security, keine Secrets im Code'; Datensparsamkeit /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:715. Die A0-Proxy-Baseline ist korrekt CONTRA-004/005/006 zugeschrieben."
+    },
+    {
+      "zelle": "REQ-035",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 209,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:658-679 Abschnitt 9 'Evidence Ledger - Nachweisregeln'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:660 'Kein Task ist fertig ohne Ledger-Eintrag ... Run und Bike werden getrennt nachgewiesen'"
+    },
+    {
+      "zelle": "REQ-036",
+      "artefakt": "docs/prd/revyr-endurance-platform.prd.md",
+      "zeile": 210,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:635-654 Abschnitt 8 Store Readiness je Stufe; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:442 'Keine Stufe beginnt vor dem Evidence-Gate der vorherigen'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:682-686 Gates A-E"
+    },
+    {
+      "zelle": "VIS-001",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 16,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Nahezu woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:13-14 'REVYR macht aus individuellem Sport reale lokale Sportnetzwerke. Die Health-App fuer Laeufer und Radfahrer, die dein Training wirklich versteht, dich mit den Sportlern deiner Umgebung verbindet - und deine Stadt zum Spielfeld macht.' 'fair': /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:37 'Fairness durch Design'; 'schrittweise': /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:432-442 Release-Fahrplan"
+    },
+    {
+      "zelle": "VIS-002",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 17,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Nahezu woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:51-52 'Primaer: Freizeit-Laeufer:innen und Radfahrer:innen (20-45), 1-4 Aktivitaeten/Woche ... Sekundaer: Ambitionierte Rennradfahrer und Laeufer ...; bestehende Gruppen/Lauftreffs/Vereine'"
+    },
+    {
+      "zelle": "VIS-003",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 18,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Alle vier Klauseln belegt: verlaessliches Tracking /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:252 NFR Zuverlaessigkeit und /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:161 T-03; verstaendlich statt abstrakt /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:47 'einsam und abstrakt ... Zahlen ohne Bedeutung'; Fortschrittssignale /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:47 'Ich verstehe meinen Fortschritt nicht' und /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:21; sicherer Zugang zu lokalen Trainingspartnern /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:26 'findet ein offenes Team in seiner Pace-Klasse', /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:51 'wuenschen sich Anschluss', Sicherheit /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:98 und /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:196 S-06"
+    },
+    {
+      "zelle": "VIS-004",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 19,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:61 'der einzige Ort, wo Training, Team und Territorium zusammengehoeren'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:32-37 Werte-Tabelle; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:44-47 Prioritaetenordnung; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:108 'Eine Architektur, zwei Erlebnisse'"
+    },
+    {
+      "zelle": "VIS-005",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 20,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:434-440 Release-Fahrplan v1.0 Health-Tracker -> v2.0 Plattform -> v3.0 Gemeinschaft -> v4.0 Spielfeld; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:442 'Keine Stufe beginnt vor dem Evidence-Gate der vorherigen'; Datenqualitaet vor Territory /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:701 Risiko 8 'Anti-Cheat vor Freischaltung (10.2), nur verified (12.4)'"
+    },
+    {
+      "zelle": "VIS-006",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 21,
+      "beanspruchte_src": "SRC-001",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:106-112 Erfolgssignal-Tabelle (> 30 %, > 50 %, > 25 %, > 25 %, > 40 %, > 60 %)"
+    },
+    {
+      "zelle": "VIS-007",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 22,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "'Orientierung, keine Diagnose' belegt und woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:96 'Alle Health-Aussagen als Orientierung, nie Diagnose/Anweisung'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:157. 'Gruende' belegt: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:149 'Pflicht: Jeder Score ist antippbar und nennt seine Gruende'. FEHLT: 'UNSICHERHEIT erklaeren'. Keine der vier Quellen verlangt eine Unsicherheitsangabe am Health-Score; 'Confidence' kommt nirgends vor. Identische Luecke wie CAN-052 und REQ-012."
+    },
+    {
+      "zelle": "VIS-008",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 23,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "TEILBELEGT",
+      "fundstelle_oder_grund": "Getrennte Metriken/Ziele/Wertungen belegt: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:112-122 Umschalt-Tabelle; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:129 'Getrennte Schwellen ueberall'; /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:128 'Rein sportinterne Wertungen bleiben in echten km'. 'simuliert' belegt: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:128 'final kalibriert in der Pflicht-Simulation (12.1)'. FEHLT: 'VERSIONIERTE' Faktoren - 'versioniert' erscheint in SRC-003 nur fuer DB-Migrationen (/Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:510). Diese Luecke pflanzt sich in REQ-023 und REQ-001 fort."
+    },
+    {
+      "zelle": "VIS-009",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 24,
+      "beanspruchte_src": "SRC-001/SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Nahezu woertlich: /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:36 'Profile standardmaessig privat, Live-Standort Opt-in mit Zeitlimit, EU-Hosting, Health-Daten nie fuer Werbung'; /Users/vincentschnetzer/Desktop/docs/REVYR-Vision-Canvas-PRD.md:98 'Opt-in pro Aktivitaet, erzwungenes Zeitlimit'; Start-/Endpunkt-Unschaerfe /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:378"
+    },
+    {
+      "zelle": "VIS-010",
+      "artefakt": "docs/vision/revyr-endurance-platform.vision.md",
+      "zeile": 25,
+      "beanspruchte_src": "SRC-003",
+      "verdikt": "BELEGT",
+      "fundstelle_oder_grund": "Woertlich: /Users/vincentschnetzer/Desktop/docs/superpowers/plans/2026-07-10-REVYR-GESAMTPLAN-FINAL.md:442 'Keine Stufe beginnt vor dem Evidence-Gate der vorherigen (Abschnitt 9)'"
+    }
+  ]
+}

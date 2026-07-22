@@ -1,0 +1,1423 @@
+{
+  "feature_slug": "revyr-endurance-platform",
+  "language": "de",
+  "mode": "DRAFT_FROM_RAW_INPUT",
+  "readiness_level": "BLOCKED_CONTRADICTION",
+  "source_map": [
+    {
+      "source_id": "SRC-001",
+      "source_kind": "vision",
+      "summary": "Kanonische Product Vision."
+    },
+    {
+      "source_id": "SRC-002",
+      "source_kind": "canvas",
+      "summary": "Kanonischer Product Canvas."
+    },
+    {
+      "source_id": "SRC-003",
+      "source_kind": "prd",
+      "summary": "Kanonisches PRD mit 36 REQs/ACs/EVs."
+    },
+    {
+      "source_id": "SRC-004",
+      "source_kind": "handoff",
+      "summary": "Claude-Handoff 5acbcc0; Tests teilweise unbestätigt."
+    },
+    {
+      "source_id": "SRC-005",
+      "source_kind": "implementation-report",
+      "summary": "Background-Verhalten widerspricht REQ-003."
+    }
+  ],
+  "artifacts": {
+    "prd": {
+      "title": "REVYR Endurance Platform",
+      "status": "blocked",
+      "feature_slug": "revyr-endurance-platform",
+      "owner": {
+        "value": "MISSING",
+        "source_type": "MISSING"
+      },
+      "source_summary": {
+        "value": "Kanonische Vision, Canvas, PRD und bisheriger Claude-Handoff.",
+        "source_type": "EXPLICIT"
+      },
+      "problem_statement": {
+        "value": "Ausdauersportler erhalten Trackingdaten ohne verständliche Orientierung und Social-Funktionen ohne reale lokale Bindung.",
+        "source_type": "EXPLICIT"
+      },
+      "target_users": [
+        {
+          "value": "Läufer:innen, Radfahrer:innen, Gruppen und Vereine.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "goals": [
+        {
+          "value": "A0 verlässlich abschließen und spätere Stufen evidenzbasiert freischalten.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "non_goals": [
+        {
+          "value": "Kein Greenfield-Neustart; keine Vorziehung späterer Stufen.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "assumptions": [
+        {
+          "value": "C0 dient als Recovery-Gate.",
+          "source_type": "ASSUMPTION"
+        }
+      ],
+      "open_questions": [
+        {
+          "value": "DRI, Referenzgeräte und spätere Anbieterentscheidungen.",
+          "source_type": "MISSING"
+        }
+      ],
+      "requirements": [
+        {
+          "id": "REQ-001",
+          "text": "Sportmodus als zentrale Konfiguration: Das System MUSS Run und Bike über einen globalen Sportmodus und versionierte Konfigurationsobjekte steuern; UI, Metriken, Routing, Auto-Pause, Sampling, Ziele und Rekorde dürfen nicht in Screens dupliziert oder hart codiert werden.",
+          "priority": "Must",
+          "release": "A0",
+          "source_type": "EXPLICIT",
+          "source": "SRC-003"
+        },
+        {
+          "id": "REQ-002",
+          "text": "Foreground-Tracking: Die App MUSS eine Run- oder Bike-Aktivität mit einem Tipp starten und GPS-Punkte, Dauer, Distanz, Live-Karte sowie sportgerechte Kernmetrik anzeigen.",
+          "priority": "Must",
+          "release": "A0",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-004"
+        },
+        {
+          "id": "REQ-003",
+          "text": "Background, Pause und Recovery: Tracking MUSS bei gesperrtem Bildschirm fortlaufen, Pause/Resume und sportabhängige Auto-Pause unterstützen sowie eine laufende Session nach App-Kill oder Absturz wiederherstellen.",
+          "priority": "Must",
+          "release": "A0",
+          "source_type": "EXPLICIT",
+          "source": "SRC-003"
+        },
+        {
+          "id": "REQ-004",
+          "text": "Erweitertes GPS-Datenmodell und Filter: Jeder Trackpunkt MUSS mindestens Position, Zeit, Genauigkeit und verfügbare Bewegungsmetadaten speichern; unplausible oder ungenaue Punkte werden durch reine, getestete Filterfunktionen markiert oder ausgeschlossen.",
+          "priority": "Must",
+          "release": "A0",
+          "source_type": "ASSUMPTION",
+          "source": "SRC-005"
+        },
+        {
+          "id": "REQ-005",
+          "text": "Robuste lokale Aktivitätsspeicherung: Aktive und abgeschlossene Sessions MÜSSEN versioniert und transaktional in einer lokalen Datenbank gespeichert werden; große Tracks dürfen nicht als einzelnes unversioniertes AsyncStorage-JSON persistiert werden.",
+          "priority": "Must",
+          "release": "A0",
+          "source_type": "ASSUMPTION",
+          "source": "SRC-005"
+        },
+        {
+          "id": "REQ-006",
+          "text": "Routenplanung: Nutzer MÜSSEN eine Route über Wegpunkte oder ein Distanzziel planen, das korrekte Run-/Bike-Routingprofil verwenden und den Plan vor dem Start prüfen können.",
+          "priority": "Must",
+          "release": "A0",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-004"
+        },
+        {
+          "id": "REQ-007",
+          "text": "Routenbezogener Fortschritt: Bei einer geplanten Route MUSS „verbleibend“ entlang der geplanten Geometrie berechnet werden und darf nicht nur Gesamtdistanz minus gelaufene Distanz sein; Abweichung und falsche Richtung müssen erkannt werden.",
+          "priority": "Must",
+          "release": "A0",
+          "source_type": "ASSUMPTION",
+          "source": "SRC-005"
+        },
+        {
+          "id": "REQ-008",
+          "text": "Verlauf, Wiederverwendung und Export: Abgeschlossene Aktivitäten MÜSSEN in Verlauf und Detailansicht verfügbar sein; gespeicherte Routen, Streckenvergleich und GPX-Export werden unterstützt.",
+          "priority": "Must",
+          "release": "A0",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-009",
+          "text": "Herzfrequenzquellen: Die App MUSS Herzfrequenz aus HealthKit, Health Connect oder unterstützten BLE-Sensoren lesen können und Quelle sowie Datenlücken transparent kennzeichnen.",
+          "priority": "Must",
+          "release": "A1",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-010",
+          "text": "Erklärbarer Belastungs-Score mit Confidence: Nach jeder Aktivität MUSS ein Belastungs-Score mit Gründen, verwendeten Signalen und Confidence-Stufe angezeigt werden; ohne Herzfrequenz wird ein klar begrenzter Fallback verwendet.",
+          "priority": "Must",
+          "release": "A1",
+          "source_type": "ASSUMPTION",
+          "source": "SRC-001/SRC-005"
+        },
+        {
+          "id": "REQ-011",
+          "text": "HF-Zonen und optionale Ansage: HF-Zonen MÜSSEN schätzbar und manuell korrigierbar sein; Live-Zonenhinweise und Audio sind optional und vollständig deaktivierbar.",
+          "priority": "Should",
+          "release": "A1",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-012",
+          "text": "Stimmungs-Check-in und Korrelation: Nach einer Aktivität SOLL ein kurzer Stimmungs-Check-in möglich sein; Korrelationen werden erst nach ausreichender Datenmenge und mit Unsicherheit dargestellt.",
+          "priority": "Should",
+          "release": "A1",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001"
+        },
+        {
+          "id": "REQ-013",
+          "text": "Health-Home und Steigerungshinweis: Home MUSS den aktuellen Wochenzustand zeigen und bei deutlich erhöhter Belastung einen orientierenden, nicht diagnostischen Hinweis ausgeben.",
+          "priority": "Must",
+          "release": "A1",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-014",
+          "text": "Designsystem und Accessibility: Alle Screens MÜSSEN ein tokenbasiertes monochromes Designsystem, Dynamic Type, Screenreader-Labels, WCAG-AA-Kontraste und zusätzliche Symbole statt alleiniger Farbcodierung verwenden.",
+          "priority": "Must",
+          "release": "A0-A2",
+          "source_type": "EXPLICIT",
+          "source": "SRC-003"
+        },
+        {
+          "id": "REQ-015",
+          "text": "Verdiente Avatar-Progression: Basis-Avatare dürfen frei angepasst werden; leistungsbezogene Items, Teamkleidung und Season-Objekte dürfen nur durch definierte reale Leistungen freigeschaltet und nicht gekauft werden.",
+          "priority": "Should",
+          "release": "A2-B-C",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-016",
+          "text": "Recaps, Erfolgskarten und Live-Status: Die App SOLL Wochenrückblicke, teilbare Erfolgskarten und plattformgerechte Live-Aktivitätsanzeigen bereitstellen, ohne sensible Start-/Endpunkte offenzulegen.",
+          "priority": "Should",
+          "release": "A2",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-017",
+          "text": "Accounts, Auth und Datenmigration: Ab v2 MÜSSEN E-Mail, Apple und Google Auth, Offline-Sync, Migration lokaler Aktivitäten und vollständige In-App-Accountlöschung unterstützt werden.",
+          "priority": "Must",
+          "release": "B",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-018",
+          "text": "Privacy, Sichtbarkeit und Moderation: Profile sind standardmäßig privat; Follow-Anfragen, Blockieren, Melden, Moderationsqueue, Regeln und Sichtbarkeitsmatrix MÜSSEN ab der ersten Social-Version vollständig funktionieren.",
+          "priority": "Must",
+          "release": "B",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-019",
+          "text": "Routenempfehlungen und Feed: Nutzer SOLLEN neue Routen erkennen, mit strukturierten Hinweisen empfehlen und von berechtigten Followern mit einem Tipp übernehmen lassen können.",
+          "priority": "Should",
+          "release": "B",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-020",
+          "text": "Teamgründung und Beitritt: Teams MÜSSEN transaktional mit Admin entstehen; Beitritt erfolgt über kontrollierbare Links oder QR-Codes mit Ablauf und Deaktivierung.",
+          "priority": "Must",
+          "release": "C",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-021",
+          "text": "Aktive Mitglieder und Teamwachstum: Teamkapazität, Stufen und Mentorbonus MÜSSEN aktive Mitglieder und echte Integration statt bloßer Einladungen belohnen.",
+          "priority": "Must",
+          "release": "C",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-022",
+          "text": "Gemeinsame Aktivitäten und Events: Gemeinsame Aktivitäten MÜSSEN aus Zeit- und räumlicher Überschneidung deterministisch erkannt werden; geplante Gruppenaktivitäten und Events nutzen dieselbe Logik und Moderation.",
+          "priority": "Must",
+          "release": "C-D",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-023",
+          "text": "Effort-Normalisierung: Sportübergreifende Team- oder Territory-Wertungen MÜSSEN versionierte, simulierte Effort-Faktoren verwenden; interne Run- und Bike-Wertungen bleiben in echten sportbezogenen Metriken getrennt.",
+          "priority": "Must",
+          "release": "C",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-024",
+          "text": "Anti-Cheat mit Confidence-Stufen: Aktivitäten MÜSSEN serverseitig auf Geschwindigkeit, Teleports und verfügbare Sensorplausibilität geprüft und als verified-high, verified-standard, low-confidence, review-required oder rejected klassifiziert werden.",
+          "priority": "Must",
+          "release": "C",
+          "source_type": "ASSUMPTION",
+          "source": "SRC-003/SRC-005"
+        },
+        {
+          "id": "REQ-025",
+          "text": "Challenges, Rankings und idempotente Rewards: Wochen-Challenges, sportgetrennte Rankings, Meilensteine und Rewards MÜSSEN serverkonfigurierbar, nachvollziehbar und idempotent sein.",
+          "priority": "Must",
+          "release": "C",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-026",
+          "text": "Team-Territory: Ab v4 dürfen nur verifizierte Beiträge und ein Quorum reale, benannte Team-Areale beeinflussen; internes Raster bleibt unsichtbar und Kartenlayer müssen performant filterbar sein.",
+          "priority": "Must",
+          "release": "D",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-027",
+          "text": "Seasons und unveränderliche Historie: Seasons MÜSSEN nur das aktive Spielfeld zurücksetzen; Snapshots, Trophäen, Vereinsheim und Zeitreise bleiben unveränderlich erhalten.",
+          "priority": "Must",
+          "release": "D",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-028",
+          "text": "Deterministische Einzel-Reviere: Einzel-Reviere dürfen erst nach Simulation und Threat-Model freigeschaltet werden; Rundenerkennung, Anfahrtssegmentierung, Übernahmepriorität, Polygon-Union/-Differenz, Restflächen und Gleichstände MÜSSEN deterministisch definiert sein.",
+          "priority": "Must",
+          "release": "D",
+          "source_type": "ASSUMPTION",
+          "source": "SRC-003/SRC-005"
+        },
+        {
+          "id": "REQ-029",
+          "text": "Sportplatz-Challenges und Bahngold-Score: Freigegebene öffentliche Sportanlagen dürfen als goldene Challenge-Orte erscheinen; Runden und Rekorde werden GPS-tolerant validiert. Bahngold ist ein nicht übertragbarer Progressions-Score, keine Währung und beeinflusst kein Territory.",
+          "priority": "Should",
+          "release": "D",
+          "source_type": "ASSUMPTION",
+          "source": "SRC-003/SRC-005"
+        },
+        {
+          "id": "REQ-030",
+          "text": "Live-Map und Beschützer-Modus: Live-Standort MUSS pro Aktivität explizit aktiviert, zeitlich begrenzt, sichtbar angezeigt, notabschaltbar und start-/endpunktverschleiert sein; Beschützer-Links enden automatisch.",
+          "priority": "Must",
+          "release": "D",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-031",
+          "text": "Sturzerkennung als Assistenz: Sturzerkennung darf nur als Assistenzfunktion mit Countdown, Abbruchmöglichkeit, dokumentierter Fehlalarmquote und ohne Sicherheitsgarantie angeboten werden.",
+          "priority": "Should",
+          "release": "D",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-032",
+          "text": "Wearables und Bike-Sensorik: Apple Watch, Wear OS und unterstützte Bike-Sensoren dürfen erst nach dokumentierter Kompatibilitätsmatrix freigeschaltet werden; Start/Stopp und Kernmetriken müssen konsistent synchronisieren.",
+          "priority": "Should",
+          "release": "E",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-033",
+          "text": "Coach, Recovery, Wetter und Zyklus unter Claims-Gate: Regenerations-, Coach-, Hitze-/Trink- und Zyklusfunktionen dürfen erst nach juristischer Claims- und Privacy-Freigabe erscheinen und müssen regelbasiert, erklärbar, optional und deaktivierbar sein.",
+          "priority": "Should",
+          "release": "E",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-034",
+          "text": "Security, Datenschutz und Datenminimierung: Das System MUSS EU-orientiertes Hosting, sichere Auth, Row-Level-Security, Rate Limits, serverseitige Validierung, Datenexport, Löschung und Datensparsamkeit umsetzen; Roh-Health-Verläufe werden nur bei nachgewiesener Notwendigkeit übertragen.",
+          "priority": "Must",
+          "release": "A0-E",
+          "source_type": "EXPLICIT",
+          "source": "SRC-001/SRC-003"
+        },
+        {
+          "id": "REQ-035",
+          "text": "Evidence Ledger und Definition of Done: Kein Task oder Gate darf als abgeschlossen gelten, bevor automatisierte Tests, reale Gerätetests, Run/Bike-Nachweise, offene Punkte und Messwerte im Evidence Ledger dokumentiert sind.",
+          "priority": "Must",
+          "release": "A0-E",
+          "source_type": "EXPLICIT",
+          "source": "SRC-003"
+        },
+        {
+          "id": "REQ-036",
+          "text": "Store- und Release-Gates: Jede Release-Stufe MUSS die zugehörigen iOS-/Android-Policies, Berechtigungsbegründungen, Datenschutzangaben und Testtracks vor Veröffentlichung bestehen; spätere Stufen starten erst nach dem vorherigen Gate.",
+          "priority": "Must",
+          "release": "A0-E",
+          "source_type": "EXPLICIT",
+          "source": "SRC-003"
+        }
+      ],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "requirement_id": "REQ-001",
+          "given": "Ein Nutzer hat einen Sportmodus gewählt.",
+          "when": "Der Nutzer zwischen Run und Bike wechselt.",
+          "then": "Alle sportabhängigen Metriken, Schwellen, Labels und Routingprofile wechseln konsistent; Run zeigt Pace, Bike zeigt Geschwindigkeit.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-002",
+          "requirement_id": "REQ-002",
+          "given": "Standortberechtigung ist erteilt und kein Tracking aktiv.",
+          "when": "Der Nutzer eine Aktivität startet und sich bewegt.",
+          "then": "Die Route und Live-Metriken aktualisieren sich fortlaufend und die Aktivität kann kontrolliert beendet werden.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-003",
+          "requirement_id": "REQ-003",
+          "given": "Eine Aktivität läuft.",
+          "when": "Der Bildschirm gesperrt, die App beendet oder eine Pause erkannt wird.",
+          "then": "Die Aktivität bleibt lückenlos, Pausenzeit verfälscht keine Metrik und die Session ist wiederherstellbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-004",
+          "requirement_id": "REQ-004",
+          "given": "Rohpunkte mit variierender Qualität liegen vor.",
+          "when": "Der GPS-Filter angewendet wird.",
+          "then": "Akzeptierte, verworfene und unsichere Punkte sind deterministisch und nachvollziehbar klassifiziert.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "AC-005",
+          "requirement_id": "REQ-005",
+          "given": "Eine Aktivität erzeugt fortlaufend Trackpunkte.",
+          "when": "Die App schreibt, beendet, startet neu oder migriert ein Schema.",
+          "then": "Keine Aktivität geht verloren und Migrationen sowie Indexe bleiben konsistent.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "AC-006",
+          "requirement_id": "REQ-006",
+          "given": "Ein Nutzer befindet sich im Planungsmodus.",
+          "when": "Wegpunkte oder ein Distanzziel eingegeben werden.",
+          "then": "Eine plausible Route beziehungsweise ein Ziel mit Distanz und Fehlermeldungen wird angezeigt.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-007",
+          "requirement_id": "REQ-007",
+          "given": "Eine geplante Route ist aktiv.",
+          "when": "Der Nutzer der Route folgt, abweicht, umkehrt oder Schleifen läuft.",
+          "then": "Fortschritt bleibt monoton plausibel, Restdistanz folgt der Route und Off-Route-Zustand wird sichtbar.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "AC-008",
+          "requirement_id": "REQ-008",
+          "given": "Mindestens eine Aktivität wurde abgeschlossen.",
+          "when": "Der Nutzer Verlauf, Detail, Wiederholen oder Export öffnet.",
+          "then": "Die korrekten sportbezogenen Daten und die aufgezeichnete Route sind verfügbar und exportierbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-009",
+          "requirement_id": "REQ-009",
+          "given": "Eine kompatible Datenquelle ist freigegeben oder verbunden.",
+          "when": "Eine Aktivität aufgezeichnet wird.",
+          "then": "Live-/Verlaufs-HF und Quelle werden korrekt dargestellt; fehlende HF blockiert Tracking nicht.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-010",
+          "requirement_id": "REQ-010",
+          "given": "Eine Aktivität mit vollständigen oder unvollständigen Health-Daten endet.",
+          "when": "Der Score berechnet und geöffnet wird.",
+          "then": "Nutzer sehen Score, konkrete Gründe, Datenbasis, fehlende Signale und die Unsicherheit der Aussage.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "AC-011",
+          "requirement_id": "REQ-011",
+          "given": "HF-Daten und Zonen sind verfügbar.",
+          "when": "Der Nutzer trainiert oder Einstellungen ändert.",
+          "then": "Zonen und Hinweise reagieren korrekt; Deaktivierung verhindert jede Ansage.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-012",
+          "requirement_id": "REQ-012",
+          "given": "Eine Aktivität endet.",
+          "when": "Der Nutzer einen Check-in abgibt und mindestens vier Wochen Daten vorliegen.",
+          "then": "Der Check-in dauert unter zwei Sekunden und Trends werden ohne Kausalitätsbehauptung angezeigt.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-013",
+          "requirement_id": "REQ-013",
+          "given": "Wochen- und Vier-Wochen-Daten liegen vor.",
+          "when": "Home geöffnet oder die Schwelle überschritten wird.",
+          "then": "Aktivitäten, Belastung und Trend sind korrekt; Hinweise verwenden freigegebene Orientierungssprache.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-014",
+          "requirement_id": "REQ-014",
+          "given": "Ein Screen oder Status wird gerendert.",
+          "when": "Dark/Light Mode, größere Schrift oder Screenreader verwendet werden.",
+          "then": "Inhalt bleibt verständlich, bedienbar und kontrastreich; Farbe ist nie der einzige Träger.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-015",
+          "requirement_id": "REQ-015",
+          "given": "Ein Unlock-Kriterium ist definiert.",
+          "when": "Die zugehörige verifizierte Leistung erreicht wird.",
+          "then": "Das Item wird genau einmal freigeschaltet; ohne Leistung oder Kauf ist es nicht verfügbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-016",
+          "requirement_id": "REQ-016",
+          "given": "Eine Aktivität oder Woche abgeschlossen ist.",
+          "when": "Ein Rückblick, Export oder Lockscreen-Status erzeugt wird.",
+          "then": "Metriken sind korrekt, exportierbar und sensible Standortdaten sind reduziert.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-017",
+          "requirement_id": "REQ-017",
+          "given": "Lokale Daten existieren oder ein Account wird erstellt.",
+          "when": "Der Nutzer sich anmeldet, offline trainiert oder sein Konto löscht.",
+          "then": "Daten migrieren/synchronisieren deterministisch; Löschung entfernt alle personenbezogenen Daten gemäß Retention-Regeln.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-018",
+          "requirement_id": "REQ-018",
+          "given": "Zwei Nutzer und Social-Inhalte existieren.",
+          "when": "Sichtbarkeit geändert, blockiert oder gemeldet wird.",
+          "then": "Nur erlaubte Daten sind sichtbar; Blockierung wirkt beidseitig sofort und Meldungen sind bearbeitbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-019",
+          "requirement_id": "REQ-019",
+          "given": "Eine Route ist neu und der Nutzer darf posten.",
+          "when": "Eine Empfehlung erstellt oder übernommen wird.",
+          "then": "Feed-Sichtbarkeit, Routendaten und Übernahme entsprechen den Privacy-Regeln.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-020",
+          "requirement_id": "REQ-020",
+          "given": "Berechtigte Nutzer gründen oder betreten ein Team.",
+          "when": "Gründung, Scan, Ablauf oder Deaktivierung ausgeführt wird.",
+          "then": "Es existiert nie ein Team ohne Admin und ungültige Tokens gewähren keinen Zugang.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-021",
+          "requirement_id": "REQ-021",
+          "given": "Ein Team hat neue, aktive und inaktive Mitglieder.",
+          "when": "Kapazität, Stufe oder Mentorbonus berechnet wird.",
+          "then": "Nur Mitglieder mit Aktivität im definierten Zeitfenster zählen; Bonus folgt erst nach nachgewiesener Integration.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-022",
+          "requirement_id": "REQ-022",
+          "given": "Mindestens zwei freigegebene Aktivitäten oder ein Event vorliegen.",
+          "when": "Nähe, Zeit und Teilnahme ausgewertet werden.",
+          "then": "Echte gemeinsame Aktivität wird erkannt, nicht gemeinsame wird abgelehnt und Eventinhalte sind moderierbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-023",
+          "requirement_id": "REQ-023",
+          "given": "Run- und Bike-Aktivitäten fließen in eine gemeinsame Mechanik.",
+          "when": "Effort und Rang berechnet werden.",
+          "then": "Keine Sportart dominiert systematisch; verwendete Version und Faktoren sind nachvollziehbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-024",
+          "requirement_id": "REQ-024",
+          "given": "Eine Aktivität synchronisiert wird.",
+          "when": "Plausibilitätsregeln angewendet werden.",
+          "then": "Fehlende Sensoren allein führen nicht zur Betrugsannahme; klare Manipulation zählt nicht für Wettbewerb.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "AC-025",
+          "requirement_id": "REQ-025",
+          "given": "Challenge-Definitionen und verifizierte Aktivitäten vorliegen.",
+          "when": "Fortschritt oder Reward verarbeitet wird.",
+          "then": "Fortschritt ist korrekt und kein Reward wird doppelt vergeben.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-026",
+          "requirement_id": "REQ-026",
+          "given": "Territory-Simulation und Geo-Daten sind freigegeben.",
+          "when": "Teams Beiträge leisten oder Layer umschalten.",
+          "then": "Eroberung folgt Formel und Quorum, reale Areale werden dargestellt und das interne Raster ist nie sichtbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-027",
+          "requirement_id": "REQ-027",
+          "given": "Eine Season endet.",
+          "when": "Der Season-Abschluss ausgeführt wird.",
+          "then": "Aktive Besitzstände werden zurückgesetzt und historische Records bleiben vollständig abrufbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-028",
+          "requirement_id": "REQ-028",
+          "given": "Eine zielgebundene, verifizierte Aktivität eine Fläche umschließt.",
+          "when": "Einnahme, Überlappung, Teilübernahme oder Gleichstand berechnet wird.",
+          "then": "Dasselbe Eingabeset erzeugt dieselbe Geometrie und denselben Besitzer; Linien-/Drift-Tracks werden abgelehnt.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "AC-029",
+          "requirement_id": "REQ-029",
+          "given": "Ein zugänglicher, kuratierter Sportplatz existiert.",
+          "when": "Vollständige Runden oder Rekorde erkannt werden.",
+          "then": "Nur plausible Runden zählen; geschlossene/private Anlagen bleiben gesperrt und Bahngold verändert keine Effort- oder Territory-Wertung.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "AC-030",
+          "requirement_id": "REQ-030",
+          "given": "Ein Nutzer eine Live-Freigabe startet.",
+          "when": "Freigabe endet, App beendet, blockiert oder Not-Aus ausgelöst wird.",
+          "then": "In jedem Pfad endet die Freigabe; unberechtigte und blockierte Personen sehen keinen Standort.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-031",
+          "requirement_id": "REQ-031",
+          "given": "Sturzähnliche Sensordaten auftreten.",
+          "when": "Das Muster erkannt wird.",
+          "then": "Ein sichtbarer Countdown startet, kann abgebrochen werden und nur danach wird der definierte Kontakt informiert.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-032",
+          "requirement_id": "REQ-032",
+          "given": "Ein unterstütztes Wearable oder Sensor gekoppelt ist.",
+          "when": "Aktivität gestartet, pausiert oder beendet wird.",
+          "then": "Status und Messwerte bleiben zwischen Geräten konsistent und nicht unterstützte Kombinationen sind klar benannt.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-033",
+          "requirement_id": "REQ-033",
+          "given": "Claims-Whitelist und Privacy-Review sind freigegeben.",
+          "when": "Eine Empfehlung erzeugt wird.",
+          "then": "Empfehlung nennt Gründe, Grenzen und Datenbasis; sensible Funktionen sind Opt-in und vollständig deaktivierbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-034",
+          "requirement_id": "REQ-034",
+          "given": "Personen-, Health- oder Standortdaten verarbeitet werden.",
+          "when": "Daten gespeichert, synchronisiert, exportiert oder gelöscht werden.",
+          "then": "Zugriff folgt Berechtigung und Zweckbindung; nicht benötigte sensible Daten verlassen das Gerät nicht.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-035",
+          "requirement_id": "REQ-035",
+          "given": "Ein Task oder Release-Gate zur Abnahme vorgelegt wird.",
+          "when": "Die Definition of Done geprüft wird.",
+          "then": "Status wird nur bei vollständiger Evidence auf done gesetzt; fehlende Nachweise bleiben sichtbar.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "AC-036",
+          "requirement_id": "REQ-036",
+          "given": "Eine Release-Stufe zur Veröffentlichung vorgesehen ist.",
+          "when": "Gate und Store-Readiness geprüft werden.",
+          "then": "Kein Release wird ohne vollständige Nachweise und Policy-Abnahmen veröffentlicht.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "non_functional_requirements": [
+        {
+          "value": "Genauigkeit, Batterie, Zuverlässigkeit, Performance, Accessibility, Datenschutz, Sicherheit, Wartbarkeit.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "risks": [
+        {
+          "value": "Background-Contradiction und unvollständige Evidence.",
+          "source_type": "CONTRADICTION"
+        }
+      ],
+      "evidence_needed": [
+        {
+          "id": "EV-001",
+          "requirement_id": "REQ-001",
+          "text": "Konfigurations-Unit-Tests und Screen-Checkliste für iOS/Android.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-002",
+          "requirement_id": "REQ-002",
+          "text": "Gerätetest je Sport und Plattform auf Referenzstrecke.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-003",
+          "requirement_id": "REQ-003",
+          "text": "30-Minuten-Kill-/Background-Test je Plattform und Sport.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-004",
+          "requirement_id": "REQ-004",
+          "text": "Drift-, Tunnel-, Sprung- und Hochgeschwindigkeits-Fixtures.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "EV-005",
+          "requirement_id": "REQ-005",
+          "text": "SQLite-Repository-Tests, Kill-Test und Migrations-Fixtures.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "EV-006",
+          "requirement_id": "REQ-006",
+          "text": "Routing-Service-Tests und zehn reale Routenszenarien je Sport.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-007",
+          "requirement_id": "REQ-007",
+          "text": "Polyline-Projektions-Fixtures und reale Abweichungstests.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "EV-008",
+          "requirement_id": "REQ-008",
+          "text": "Repository-, UI- und GPX-Kompatibilitätstest.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-009",
+          "requirement_id": "REQ-009",
+          "text": "Echte Geräte und BLE-Gurt je Plattform.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-010",
+          "requirement_id": "REQ-010",
+          "text": "Formeltests mit/ohne HF und UI-Test des Warum-Sheets.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "EV-011",
+          "requirement_id": "REQ-011",
+          "text": "Zonen-Unit-Tests und Kopfhörer-Gerätetest.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-012",
+          "requirement_id": "REQ-012",
+          "text": "Zeitmessung, Fixture-Korrelation und Copy-Review.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-013",
+          "requirement_id": "REQ-013",
+          "text": "Wochen-Fixtures und Claims-Lint.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-014",
+          "requirement_id": "REQ-014",
+          "text": "Token-Review, Accessibility- und Screenreader-Check.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-015",
+          "requirement_id": "REQ-015",
+          "text": "Idempotenz- und Unlock-Fixtures.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-016",
+          "requirement_id": "REQ-016",
+          "text": "Bildexport-, Widget- und Privacy-Snapshot-Test.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-017",
+          "requirement_id": "REQ-017",
+          "text": "E2E-Flow, Offline-Test und Löschungsnachweis.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-018",
+          "requirement_id": "REQ-018",
+          "text": "Sichtbarkeits-Matrix, Zwei-Account- und Moderationstest.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-019",
+          "requirement_id": "REQ-019",
+          "text": "Zwei-Account-E2E-Flow.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-020",
+          "requirement_id": "REQ-020",
+          "text": "Datenbanktransaktions- und Zwei-Geräte-Test.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-021",
+          "requirement_id": "REQ-021",
+          "text": "Zeitfenster- und Integrations-Fixtures.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-022",
+          "requirement_id": "REQ-022",
+          "text": "Pure-Function-Fixtures und Zwei-Geräte-Eventtest.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-023",
+          "requirement_id": "REQ-023",
+          "text": "Monte-Carlo-/Szenariosimulation und Kalibrierungsbericht.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-024",
+          "requirement_id": "REQ-024",
+          "text": "Betrugs-/Grenzfall-Fixtures und False-Positive-Review.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "EV-025",
+          "requirement_id": "REQ-025",
+          "text": "Deterministische Fixtures und Wiederholungs-Test.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-026",
+          "requirement_id": "REQ-026",
+          "text": "Geo-Fixtures, Simulation und Karten-Lasttest.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-027",
+          "requirement_id": "REQ-027",
+          "text": "Zwei-Season-Integrationstest und Unveränderlichkeitsprüfung.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-028",
+          "requirement_id": "REQ-028",
+          "text": "Geo-Fixture-Suite, Property-Tests und Threat-Model.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "EV-029",
+          "requirement_id": "REQ-029",
+          "text": "OSM-Access-Review, realer Bahn-Test und Reward-Fixtures.",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "id": "EV-030",
+          "requirement_id": "REQ-030",
+          "text": "Threat-Model, Endpfad-Matrix und Penetrationstest.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-031",
+          "requirement_id": "REQ-031",
+          "text": "Kontrollierte Falltests, Fehlalarmstatistik und Claims-Review.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-032",
+          "requirement_id": "REQ-032",
+          "text": "Gerätematrix und reale Integrationstests.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-033",
+          "requirement_id": "REQ-033",
+          "text": "Claims-Lint, Rechtsfreigabe und Privacy-Test.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-034",
+          "requirement_id": "REQ-034",
+          "text": "Security-Review, RLS-Tests, Datenflussdiagramm und Löschungsnachweis.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-035",
+          "requirement_id": "REQ-035",
+          "text": "CI-Regel, Ledger-Review und Gate-Checkliste.",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "id": "EV-036",
+          "requirement_id": "REQ-036",
+          "text": "TestFlight/Internal-Test-Bericht, Policy-Matrix und Gate-Sign-off.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "links_to_vision_canvas_traceability": {
+        "vision": "docs/vision/revyr-endurance-platform.vision.md",
+        "canvas": "docs/canvas/revyr-endurance-platform.canvas.md",
+        "traceability": "docs/traceability.md"
+      },
+      "user_confirmation_required": true
+    },
+    "vision": {
+      "product_vision_statement": {
+        "value": "Eine Health-first Ausdauerplattform für Läufer:innen und Radfahrer:innen, die verlässliches Tracking in verständliche Trainingsorientierung übersetzt, reale lokale Gemeinschaft fördert und erst nach nachgewiesener Fairness die Stadt zum Spielfeld erweitert.",
+        "source_type": "EXPLICIT"
+      },
+      "target_group": {
+        "value": "Freizeit- und ambitionierte Läufer:innen und Radfahrer:innen sowie lokale Sportgruppen und Vereine.",
+        "source_type": "EXPLICIT"
+      },
+      "user_needs": [
+        {
+          "value": "Verlässliches Tracking, verständliche Health-Auswertung, Fortschritt und sichere lokale Gemeinschaft.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "product_value": {
+        "value": "Health-first Tracking, verdiente Progression, lokale Teams und spätere Territory-Mechaniken.",
+        "source_type": "EXPLICIT"
+      },
+      "business_or_project_goals": [
+        {
+          "value": "A0 stabilisieren, dann A1–E nur über Evidence Gates.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "success_signals": [
+        {
+          "value": "W4-Retention >30 % sowie phasenbezogene Nutzungs- und Community-Signale.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "boundaries": [
+        {
+          "value": "Kein Medizinprodukt; keine kaufbaren Leistungsvorteile; keine späteren Stufen vor Gate.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "assumptions": [
+        {
+          "value": "A0/A1/A2 reduziert Release-Risiko.",
+          "source_type": "ASSUMPTION"
+        }
+      ],
+      "missing_items": [
+        {
+          "value": "Öffentlicher Name, DRI, spätere Anbieter-/Geschäftsentscheidungen.",
+          "source_type": "MISSING"
+        }
+      ],
+      "confirmation_status": "pending-user-confirmation"
+    },
+    "canvas": {
+      "feature_slug": "revyr-endurance-platform",
+      "problem": {
+        "value": "Tracker liefern Daten ohne genügend Bedeutung und Social ohne lokale Bindung.",
+        "source_type": "EXPLICIT"
+      },
+      "users_customers": [
+        {
+          "value": "Läufer:innen, Radfahrer:innen, Gruppen und Vereine.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "value_promise": {
+        "value": "Verlässliches Tracking und erklärbare Trainingsorientierung zuerst; lokale Gemeinschaft und Territory danach.",
+        "source_type": "EXPLICIT"
+      },
+      "current_alternatives": [
+        {
+          "value": "Strava, Garmin, Apple Fitness, Fitbit, Whoop, Vereine und WhatsApp-Gruppen.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "key_capabilities": [
+        {
+          "value": "Tracking, Routen, Health, Progression, Accounts, Teams, Territory, Safety, Wearables.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "non_goals": [
+        {
+          "value": "Kein Medizinprodukt, Messenger oder kaufbare Leistungs-Boosts.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "constraints": [
+        {
+          "value": "iOS/Android, DSGVO, Store-Policies, reale Gerätetests.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "risks": [
+        {
+          "value": "GPS, Batterie, Claims, Betrug, Standortmissbrauch, Geo-Komplexität.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "success_signal": {
+        "value": "Stabiler Tracker, W4-Retention und verständliche Health-Auswertung.",
+        "source_type": "EXPLICIT"
+      },
+      "evidence": [
+        {
+          "value": "Tests, Referenzstrecken, Batterie-, Kill-, Privacy- und Store-Nachweise.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "allowed_scope": [
+        {
+          "value": "A0 Tracking; A1 Health; A2 Basisrelease; B Accounts; C Teams; D Territory; E Wearables/Coach.",
+          "source_type": "EXPLICIT"
+        }
+      ],
+      "unresolved_questions": [
+        {
+          "value": "Name, Backend, Routinganbieter, Claims, Geräte und Geschäftsmodell.",
+          "source_type": "MISSING"
+        }
+      ]
+    },
+    "traceability": {
+      "feature_slug": "revyr-endurance-platform",
+      "rows": [
+        {
+          "trace_id": "TRC-001",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-001",
+          "acceptance_criteria_id": "AC-001",
+          "evidence_needed": "Konfigurations-Unit-Tests und Screen-Checkliste für iOS/Android.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-002",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-002",
+          "acceptance_criteria_id": "AC-002",
+          "evidence_needed": "Gerätetest je Sport und Plattform auf Referenzstrecke.",
+          "status": "blocked",
+          "source_type": "BLOCKER"
+        },
+        {
+          "trace_id": "TRC-003",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-003",
+          "acceptance_criteria_id": "AC-003",
+          "evidence_needed": "30-Minuten-Kill-/Background-Test je Plattform und Sport.",
+          "status": "contradiction",
+          "source_type": "CONTRADICTION"
+        },
+        {
+          "trace_id": "TRC-004",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-004",
+          "acceptance_criteria_id": "AC-004",
+          "evidence_needed": "Drift-, Tunnel-, Sprung- und Hochgeschwindigkeits-Fixtures.",
+          "status": "draft",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "trace_id": "TRC-005",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-005",
+          "acceptance_criteria_id": "AC-005",
+          "evidence_needed": "SQLite-Repository-Tests, Kill-Test und Migrations-Fixtures.",
+          "status": "blocked",
+          "source_type": "BLOCKER"
+        },
+        {
+          "trace_id": "TRC-006",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-006",
+          "acceptance_criteria_id": "AC-006",
+          "evidence_needed": "Routing-Service-Tests und zehn reale Routenszenarien je Sport.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-007",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-007",
+          "acceptance_criteria_id": "AC-007",
+          "evidence_needed": "Polyline-Projektions-Fixtures und reale Abweichungstests.",
+          "status": "draft",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "trace_id": "TRC-008",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-008",
+          "acceptance_criteria_id": "AC-008",
+          "evidence_needed": "Repository-, UI- und GPX-Kompatibilitätstest.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-009",
+          "vision_item_id": "VIS-003",
+          "canvas_item_id": "CAN-003",
+          "requirement_id": "REQ-009",
+          "acceptance_criteria_id": "AC-009",
+          "evidence_needed": "Echte Geräte und BLE-Gurt je Plattform.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-010",
+          "vision_item_id": "VIS-003",
+          "canvas_item_id": "CAN-003",
+          "requirement_id": "REQ-010",
+          "acceptance_criteria_id": "AC-010",
+          "evidence_needed": "Formeltests mit/ohne HF und UI-Test des Warum-Sheets.",
+          "status": "draft",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "trace_id": "TRC-011",
+          "vision_item_id": "VIS-003",
+          "canvas_item_id": "CAN-003",
+          "requirement_id": "REQ-011",
+          "acceptance_criteria_id": "AC-011",
+          "evidence_needed": "Zonen-Unit-Tests und Kopfhörer-Gerätetest.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-012",
+          "vision_item_id": "VIS-003",
+          "canvas_item_id": "CAN-003",
+          "requirement_id": "REQ-012",
+          "acceptance_criteria_id": "AC-012",
+          "evidence_needed": "Zeitmessung, Fixture-Korrelation und Copy-Review.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-013",
+          "vision_item_id": "VIS-003",
+          "canvas_item_id": "CAN-003",
+          "requirement_id": "REQ-013",
+          "acceptance_criteria_id": "AC-013",
+          "evidence_needed": "Wochen-Fixtures und Claims-Lint.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-014",
+          "vision_item_id": "VIS-005",
+          "canvas_item_id": "CAN-007",
+          "requirement_id": "REQ-014",
+          "acceptance_criteria_id": "AC-014",
+          "evidence_needed": "Token-Review, Accessibility- und Screenreader-Check.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-015",
+          "vision_item_id": "VIS-004",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-015",
+          "acceptance_criteria_id": "AC-015",
+          "evidence_needed": "Idempotenz- und Unlock-Fixtures.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-016",
+          "vision_item_id": "VIS-004",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-016",
+          "acceptance_criteria_id": "AC-016",
+          "evidence_needed": "Bildexport-, Widget- und Privacy-Snapshot-Test.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-017",
+          "vision_item_id": "VIS-009",
+          "canvas_item_id": "CAN-011",
+          "requirement_id": "REQ-017",
+          "acceptance_criteria_id": "AC-017",
+          "evidence_needed": "E2E-Flow, Offline-Test und Löschungsnachweis.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-018",
+          "vision_item_id": "VIS-009",
+          "canvas_item_id": "CAN-011",
+          "requirement_id": "REQ-018",
+          "acceptance_criteria_id": "AC-018",
+          "evidence_needed": "Sichtbarkeits-Matrix, Zwei-Account- und Moderationstest.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-019",
+          "vision_item_id": "VIS-009",
+          "canvas_item_id": "CAN-011",
+          "requirement_id": "REQ-019",
+          "acceptance_criteria_id": "AC-019",
+          "evidence_needed": "Zwei-Account-E2E-Flow.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-020",
+          "vision_item_id": "VIS-008",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-020",
+          "acceptance_criteria_id": "AC-020",
+          "evidence_needed": "Datenbanktransaktions- und Zwei-Geräte-Test.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-021",
+          "vision_item_id": "VIS-008",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-021",
+          "acceptance_criteria_id": "AC-021",
+          "evidence_needed": "Zeitfenster- und Integrations-Fixtures.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-022",
+          "vision_item_id": "VIS-008",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-022",
+          "acceptance_criteria_id": "AC-022",
+          "evidence_needed": "Pure-Function-Fixtures und Zwei-Geräte-Eventtest.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-023",
+          "vision_item_id": "VIS-008",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-023",
+          "acceptance_criteria_id": "AC-023",
+          "evidence_needed": "Monte-Carlo-/Szenariosimulation und Kalibrierungsbericht.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-024",
+          "vision_item_id": "VIS-008",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-024",
+          "acceptance_criteria_id": "AC-024",
+          "evidence_needed": "Betrugs-/Grenzfall-Fixtures und False-Positive-Review.",
+          "status": "draft",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "trace_id": "TRC-025",
+          "vision_item_id": "VIS-008",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-025",
+          "acceptance_criteria_id": "AC-025",
+          "evidence_needed": "Deterministische Fixtures und Wiederholungs-Test.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-026",
+          "vision_item_id": "VIS-010",
+          "canvas_item_id": "CAN-011",
+          "requirement_id": "REQ-026",
+          "acceptance_criteria_id": "AC-026",
+          "evidence_needed": "Geo-Fixtures, Simulation und Karten-Lasttest.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-027",
+          "vision_item_id": "VIS-010",
+          "canvas_item_id": "CAN-011",
+          "requirement_id": "REQ-027",
+          "acceptance_criteria_id": "AC-027",
+          "evidence_needed": "Zwei-Season-Integrationstest und Unveränderlichkeitsprüfung.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-028",
+          "vision_item_id": "VIS-010",
+          "canvas_item_id": "CAN-011",
+          "requirement_id": "REQ-028",
+          "acceptance_criteria_id": "AC-028",
+          "evidence_needed": "Geo-Fixture-Suite, Property-Tests und Threat-Model.",
+          "status": "draft",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "trace_id": "TRC-029",
+          "vision_item_id": "VIS-010",
+          "canvas_item_id": "CAN-011",
+          "requirement_id": "REQ-029",
+          "acceptance_criteria_id": "AC-029",
+          "evidence_needed": "OSM-Access-Review, realer Bahn-Test und Reward-Fixtures.",
+          "status": "draft",
+          "source_type": "ASSUMPTION"
+        },
+        {
+          "trace_id": "TRC-030",
+          "vision_item_id": "VIS-009",
+          "canvas_item_id": "CAN-008",
+          "requirement_id": "REQ-030",
+          "acceptance_criteria_id": "AC-030",
+          "evidence_needed": "Threat-Model, Endpfad-Matrix und Penetrationstest.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-031",
+          "vision_item_id": "VIS-009",
+          "canvas_item_id": "CAN-008",
+          "requirement_id": "REQ-031",
+          "acceptance_criteria_id": "AC-031",
+          "evidence_needed": "Kontrollierte Falltests, Fehlalarmstatistik und Claims-Review.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-032",
+          "vision_item_id": "VIS-007",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-032",
+          "acceptance_criteria_id": "AC-032",
+          "evidence_needed": "Gerätematrix und reale Integrationstests.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-033",
+          "vision_item_id": "VIS-007",
+          "canvas_item_id": "CAN-005",
+          "requirement_id": "REQ-033",
+          "acceptance_criteria_id": "AC-033",
+          "evidence_needed": "Claims-Lint, Rechtsfreigabe und Privacy-Test.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-034",
+          "vision_item_id": "VIS-009",
+          "canvas_item_id": "CAN-007",
+          "requirement_id": "REQ-034",
+          "acceptance_criteria_id": "AC-034",
+          "evidence_needed": "Security-Review, RLS-Tests, Datenflussdiagramm und Löschungsnachweis.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-035",
+          "vision_item_id": "VIS-010",
+          "canvas_item_id": "CAN-010",
+          "requirement_id": "REQ-035",
+          "acceptance_criteria_id": "AC-035",
+          "evidence_needed": "CI-Regel, Ledger-Review und Gate-Checkliste.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        },
+        {
+          "trace_id": "TRC-036",
+          "vision_item_id": "VIS-010",
+          "canvas_item_id": "CAN-007",
+          "requirement_id": "REQ-036",
+          "acceptance_criteria_id": "AC-036",
+          "evidence_needed": "TestFlight/Internal-Test-Bericht, Policy-Matrix und Gate-Sign-off.",
+          "status": "draft",
+          "source_type": "EXPLICIT"
+        }
+      ]
+    }
+  },
+  "missing_blocker_ledger": [
+    {
+      "id": "BLK-001",
+      "field": "Background Tracking",
+      "source_type": "CONTRADICTION",
+      "severity": "blocker",
+      "reason": "Codebericht widerspricht REQ-003.",
+      "source_ref": "SRC-005"
+    },
+    {
+      "id": "BLK-002",
+      "field": "Activity-time/segment tests",
+      "source_type": "BLOCKER",
+      "severity": "blocker",
+      "reason": "Jest nicht erfolgreich abgeschlossen.",
+      "source_ref": "SRC-004"
+    },
+    {
+      "id": "BLK-003",
+      "field": "Native evidence",
+      "source_type": "BLOCKER",
+      "severity": "blocker",
+      "reason": "iOS/Android-Build und Smoke fehlen.",
+      "source_ref": "SRC-004"
+    },
+    {
+      "id": "MISS-001",
+      "field": "Product Owner",
+      "source_type": "MISSING",
+      "severity": "warning",
+      "reason": "DRI fehlt.",
+      "source_ref": "SRC-003"
+    }
+  ],
+  "user_confirmation": {
+    "required": true,
+    "status": "blocked",
+    "confirmation_phrase": "Ich bestätige, dass Product Canvas und Product Vision meine Absicht korrekt wiedergeben und als Grundlage für AgileTeam Planning verwendet werden dürfen.",
+    "confirmed_by_user": false
+  }
+}

@@ -1,0 +1,59 @@
+# Node / package managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun.lockb.bak
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Native builds — kompletter ios/ und android/ Ordner bleibt untracked.
+# Werden via `expo prebuild` regeneriert; deren Inhalt darf sich mit jedem Expo-Update aendern.
+mobile/ios/
+mobile/android/
+mobile/*.tsbuildinfo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tool-generated (Claude Code, claude-flow) — nicht in Repo
+.claude/
+.claude-flow/
+
+# Python (validator chain)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Test / coverage output
+coverage/
+*.log
+
+# Scratchpad / tmp
+scratchpad/
+/tmp-*/

@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "revyr-dev",
+    "slug": "revyr-mobile",
+    "scheme": "revyr",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.revyr.dev",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "REVYR-Dev nutzt deinen Standort, um Aktivitaeten aufzuzeichnen — nur waehrend der App-Nutzung, keine Hintergrundverfolgung."
+      }
+    },
+    "android": {
+      "package": "app.revyr.dev",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "REVYR-Dev nutzt deinen Standort, um Aktivitaeten aufzuzeichnen — nur waehrend der App-Nutzung."
+        }
+      ]
+    ]
+  }
+}

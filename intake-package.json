@@ -1,0 +1,2157 @@
+{
+  "schema_provenance": {
+    "schema_file": "scratchpad/intake-package.schema.json",
+    "authored_in_this_run": true,
+    "is_preexisting_standard": false,
+    "validator_file": "scratchpad/validate_intake.py",
+    "note": "Schema UND Validator wurden am 2026-07-19 in diesem Lauf neu verfasst. Vorher existierte kein ausfuehrbares Intake- oder Schema-Validierungswerkzeug (docs/ID-REGISTRY.md §8 Punkt 13, §9). 'Schema valid' heisst deshalb nur: konform zu diesem selbst definierten Schema — nicht: konform zu einem anerkannten Standard."
+  },
+  "feature_slug": "revyr-endurance-platform",
+  "generated_at": "2026-07-20",
+  "confirmation": {
+    "user_confirmed": false,
+    "true_line_status": "pending-watcher",
+    "self_certified": false,
+    "max_reachable_status": "READY_FOR_USER_CONFIRMATION"
+  },
+  "artifacts": [
+    {
+      "path": "docs/ID-REGISTRY.md",
+      "role": "Kanonische ID-Quelle (ab Phase 2 eingefroren)",
+      "exists": true,
+      "lines": 1737,
+      "declared_status": "ready-for-user-confirmation — diese Registry bestätigt nichts."
+    },
+    {
+      "path": "docs/vision/revyr-endurance-platform.vision.md",
+      "role": "Vision",
+      "exists": true,
+      "lines": 460,
+      "declared_status": "ready-for-user-confirmation"
+    },
+    {
+      "path": "docs/canvas/revyr-endurance-platform.canvas.md",
+      "role": "Product Canvas (atomare Items)",
+      "exists": true,
+      "lines": 718,
+      "declared_status": "ready-for-user-confirmation"
+    },
+    {
+      "path": "docs/prd/revyr-endurance-platform.prd.md",
+      "role": "PRD inkl. Messmodell je Requirement",
+      "exists": true,
+      "lines": 1838,
+      "declared_status": "READY_FOR_USER_CONFIRMATION"
+    },
+    {
+      "path": "docs/traceability.md",
+      "role": "Traceability-Matrix",
+      "exists": true,
+      "lines": 2810,
+      "declared_status": "linked – READY_FOR_USER_CONFIRMATION (nicht bestätigt)"
+    },
+    {
+      "path": "docs/architecture/revyr-target-architecture.md",
+      "role": "Zielarchitektur",
+      "exists": true,
+      "lines": 574,
+      "declared_status": "proposed – READY_FOR_USER_CONFIRMATION"
+    },
+    {
+      "path": "docs/implementation/revyr-delivery-plan.md",
+      "role": "Delivery-Plan",
+      "exists": true,
+      "lines": 451,
+      "declared_status": "READY_FOR_USER_CONFIRMATION"
+    },
+    {
+      "path": "docs/decisions/decision-log.md",
+      "role": "Entscheidungs- und Widerspruchs-Ledger",
+      "exists": true,
+      "lines": 526,
+      "declared_status": "proposed – pending-user-confirmation"
+    },
+    {
+      "path": "docs/decisions/open-questions.md",
+      "role": "Kanonisches OQ-Register",
+      "exists": true,
+      "lines": 353,
+      "declared_status": "MISSING — keine Statuszeile im Kopf"
+    },
+    {
+      "path": "docs/risks/revyr-risk-register.md",
+      "role": "Risikoregister",
+      "exists": true,
+      "lines": 125,
+      "declared_status": "active – pending-user-confirmation"
+    },
+    {
+      "path": "docs/EVIDENCE-LEDGER.md",
+      "role": "Evidence Ledger (leer, keine Evidence erbracht)",
+      "exists": true,
+      "lines": 753,
+      "declared_status": "empty-template-for-implementation"
+    },
+    {
+      "path": "docs/SOURCE-MAP.md",
+      "role": "Quellenkarte",
+      "exists": true,
+      "lines": 295,
+      "declared_status": "pending-user-confirmation — diese Datei bestätigt nichts."
+    },
+    {
+      "path": "docs/validation/validation-report.md",
+      "role": "Validierungsbericht",
+      "exists": true,
+      "lines": 413,
+      "declared_status": "BLOCKED_TRACEABILITY"
+    },
+    {
+      "path": "README.md",
+      "role": "Repository-Einstieg",
+      "exists": true,
+      "lines": 112,
+      "declared_status": "MISSING — keine Statuszeile im Kopf"
+    },
+    {
+      "path": "intake-package.json",
+      "role": "Dieses Intake-Paket",
+      "exists": true,
+      "lines": 0,
+      "declared_status": "in diesem Lauf erzeugt",
+      "notes": "Selbstbezug: Zeilenzahl bewusst 0, weil sie sich beim Schreiben dieser Datei selbst veraendern wuerde. Kein unbegruendeter Nullwert."
+    },
+    {
+      "path": "infra/routing-proxy/",
+      "role": "nur dokumentiert, bewusst NICHT angelegt",
+      "exists": false,
+      "lines": 0,
+      "declared_status": "NICHT ANGELEGT — in diesem Lauf ausdruecklich verboten",
+      "notes": "Ablageort ist entschieden (OQ-011), aber es existiert keine Quelldatei, kein Deployment und keine AWS-Ressource."
+    },
+    {
+      "path": "mobile/",
+      "role": "nur dokumentiert, bewusst NICHT angelegt",
+      "exists": false,
+      "lines": 0,
+      "declared_status": "NICHT ANGELEGT — in diesem Lauf ausdruecklich verboten",
+      "notes": "Ablageort ist entschieden (OQ-011), aber es existiert keine Quelldatei, kein Deployment und keine AWS-Ressource."
+    },
+    {
+      "path": "backend/",
+      "role": "nur dokumentiert, bewusst NICHT angelegt",
+      "exists": false,
+      "lines": 0,
+      "declared_status": "NICHT ANGELEGT — in diesem Lauf ausdruecklich verboten",
+      "notes": "Ablageort ist entschieden (OQ-011), aber es existiert keine Quelldatei, kein Deployment und keine AWS-Ressource."
+    }
+  ],
+  "id_counts": {
+    "by_prefix": {
+      "VIS": {
+        "active": 11,
+        "reserved": 3,
+        "total": 14
+      },
+      "CAN": {
+        "deprecated": 14,
+        "active": 123,
+        "reserved": 6,
+        "total": 143
+      },
+      "REQ": {
+        "template-placeholder": 1,
+        "active": 40,
+        "deprecated": 2,
+        "total": 43
+      },
+      "AC": {
+        "template-placeholder": 1,
+        "active": 41,
+        "deprecated": 2,
+        "total": 44
+      },
+      "TRC": {
+        "active": 40,
+        "deprecated": 2,
+        "total": 42
+      },
+      "EV": {
+        "template-placeholder": 1,
+        "active": 42,
+        "deprecated": 2,
+        "total": 45
+      },
+      "RISK": {
+        "active": 24,
+        "total": 24
+      },
+      "ASM": {
+        "active": 7,
+        "deprecated": 7,
+        "total": 14
+      },
+      "OQ": {
+        "open": 15,
+        "resolved": 1,
+        "total": 16
+      },
+      "CONTRA": {
+        "resolved": 6,
+        "total": 6
+      },
+      "USER": {
+        "active": 4,
+        "total": 4
+      },
+      "NFR": {
+        "active": 8,
+        "total": 8
+      }
+    },
+    "unmanaged_prefixes": [
+      {
+        "prefix": "USER",
+        "registry_managed": false,
+        "risk": "Nicht registry-verwaltet (Registry §5): ungeschuetzt gegen denselben Kollisionsdefekt, den die Registry fuer ihre 12 verwalteten Praefixe behebt."
+      },
+      {
+        "prefix": "NFR",
+        "registry_managed": false,
+        "risk": "Nicht registry-verwaltet (Registry §5): ungeschuetzt gegen denselben Kollisionsdefekt, den die Registry fuer ihre 12 verwalteten Praefixe behebt."
+      },
+      {
+        "prefix": "DEC",
+        "registry_managed": false,
+        "risk": "Nicht registry-verwaltet (Registry §5): ungeschuetzt gegen denselben Kollisionsdefekt, den die Registry fuer ihre 12 verwalteten Praefixe behebt."
+      },
+      {
+        "prefix": "SRC",
+        "registry_managed": false,
+        "risk": "Nicht registry-verwaltet (Registry §5): ungeschuetzt gegen denselben Kollisionsdefekt, den die Registry fuer ihre 12 verwalteten Praefixe behebt."
+      },
+      {
+        "prefix": "VC",
+        "registry_managed": false,
+        "risk": "Nicht registry-verwaltet (Registry §5): ungeschuetzt gegen denselben Kollisionsdefekt, den die Registry fuer ihre 12 verwalteten Praefixe behebt."
+      },
+      {
+        "prefix": "GATE",
+        "registry_managed": false,
+        "risk": "Nicht registry-verwaltet (Registry §5): ungeschuetzt gegen denselben Kollisionsdefekt, den die Registry fuer ihre 12 verwalteten Praefixe behebt."
+      }
+    ],
+    "template_placeholders": [
+      "AC-000",
+      "EV-000",
+      "REQ-000"
+    ]
+  },
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "title": "Sportmodus als zentrale Konfiguration",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A0",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — die Pass-Bedingung ist eine analytische 0-/100-%-Schranke aus AC-001 und damit keine gewählte Zahl; belegbedürftig und unbelegt bleibt die Anforderung selbst. Anker CAN-047/CAN-028/CAN-013 tragen EXPLICIT über SRC-001/SRC-003, die laut docs/SOURCE-MAP.md nicht auffindbar sind.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-013",
+          "CAN-028",
+          "CAN-047",
+          "SRC-001",
+          "SRC-003"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-001",
+      "acceptance_criterion": "AC-001",
+      "evidence": "EV-001",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-002",
+      "title": "Foreground-Tracking",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A0",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — die Pass-Bedingung ist NFR-001 (< 3 %). NFR-001 ist im NFR-Audit auf ASSUMPTION herabgestuft; ein abgeleiteter Wert kann nicht stärker belegt sein als seine Quelle.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-002",
+      "acceptance_criterion": "AC-002",
+      "evidence": "EV-002",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-003",
+      "title": "Background, Pause und Recovery",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A0",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — die Pass-Bedingung stützt sich auf NFR-003 und NFR-002, beide ASSUMPTION. Selbstwiderspruch aufgelöst: dieselbe Zelle bezeichnet den Batteriewert bereits als „nicht empirisch belegt“; EXPLICIT war damit mit dem eigenen Zellentext unvereinbar (DIV-5).",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-003",
+      "acceptance_criterion": "AC-003",
+      "evidence": "EV-003",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-004",
+      "title": "Erweitertes GPS-Datenmodell und Filter",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A0",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — der Determinismusteil ist analytisch, der Restfehler zahlt jedoch auf NFR-001 (ASSUMPTION) ein. Zusätzlich führt das PRD REQ-004 selbst mit Source Type ASSUMPTION (Herkunft SRC-005); die Messmodellzeile widersprach damit der Requirement-Zeile.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "SRC-005"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-004",
+      "acceptance_criterion": "AC-004",
+      "evidence": "EV-004",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-005",
+      "title": "Robuste lokale Aktivitätsspeicherung",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A0",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — die Pass-Bedingung ist NFR-003 (Nullschwelle). Die Schwelle 0 folgt logisch aus „kein Datenverlust“ und ist insoweit nicht belegbedürftig; belegbedürftig und unbelegt ist die Anforderung selbst.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-005",
+      "acceptance_criterion": "AC-005",
+      "evidence": "EV-005",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-006",
+      "title": "Routenplanung",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A0",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — klauselweise geprüft: „zehn reale Routenszenarien je Sport“ ist eine gewählte, in keinem Artefakt belegte Zahl (warum zehn und nicht fünf, ist nirgends begründet); Erfolgsrate, Latenz und Timeout sind bereits MISSING. Die Klausel „0 Routing-Provider-Keys im App-Bundle“ ist EXPLICIT (DEC-005 user-confirmed, CAN-092 CONFIRMED, SRC-006) — sie ist aber eine aus NFR-007 entliehene Zusatzkontrolle, nicht der eigene Zielwert von REQ-006, und trägt die Zeile deshalb nicht.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-092",
+          "CONFIRMED",
+          "DEC-005",
+          "SRC-006",
+          "user-confirmed"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-006",
+      "acceptance_criterion": "AC-006",
+      "evidence": "EV-006",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-007",
+      "title": "Routenbezogener Fortschritt",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A0",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-007",
+      "acceptance_criterion": "AC-007",
+      "evidence": "EV-007",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-008",
+      "title": "Verlauf und Detailansicht",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A0",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION — zwei Gründe, die unabhängig voneinander tragen: (1) die Pass-Bedingungen sind analytische 0-/100-%-Schranken ohne gewählten Zahlenwert, belegbedürftig und unbelegt bleibt die Anforderung selbst (sie trug EXPLICIT über SRC-001/SRC-003, die laut docs/SOURCE-MAP.md nicht auffindbar sind); (2) der verengte Wortlaut stammt aus der Nutzerentscheidung vom 2026-07-19, ist aber nicht ausdrücklich als Anforderungstext bestätigt.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "SRC-001",
+          "SRC-003"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-008",
+      "acceptance_criterion": "AC-008",
+      "evidence": "EV-008",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-009",
+      "title": "Herzfrequenzquellen",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A1",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — 100-%-Kennzeichnung und 0-%-Blockade sind analytische Schranken; die Anforderung selbst ist unbelegt. Die zulässige Lückenrate je Quelle bleibt MISSING.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-009",
+      "acceptance_criterion": "AC-009",
+      "evidence": "EV-009",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-010",
+      "title": "Erklärbarer Belastungs-Score mit Confidence",
+      "measurement_type": "PRODUCT_OUTCOME",
+      "measurement_type_verbatim": "PRODUCT_OUTCOME",
+      "release_gate": "GATE-A1",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-010",
+      "acceptance_criterion": "AC-010",
+      "evidence": "EV-010",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-011",
+      "title": "HF-Zonen und optionale Ansage",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A1",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — „0 Ansagen in 100 % der Deaktivierungstests“ ist eine analytische Nullschwelle; die Anforderung selbst ist unbelegt. Das Genauigkeitsziel der Zonenschätzung bleibt MISSING und ist zusätzlich an OQ-006 gebunden.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-011",
+      "acceptance_criterion": "AC-011",
+      "evidence": "EV-011",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-012",
+      "title": "Stimmungs-Check-in und Korrelation",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-A1",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-012",
+      "acceptance_criterion": "AC-012",
+      "evidence": "EV-012",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-013",
+      "title": "Health-Home und Steigerungshinweis",
+      "measurement_type": "PRODUCT_OUTCOME",
+      "measurement_type_verbatim": "PRODUCT_OUTCOME",
+      "release_gate": "GATE-A1",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-013",
+      "acceptance_criterion": "AC-013",
+      "evidence": "EV-013",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-015",
+      "title": "Verdiente Avatar-Progression",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-A2 (PRD Release A2-B-C; erstmalige Abnahme mit GATE-A2, danach fortlaufend bis GATE-C)",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — „0 Kaufpfade, genau einmal“ ist eine analytische Nullschwelle. Der tragende Anker CAN-075 führt Source Type EXPLICIT mit Quelle SRC-001, die laut docs/SOURCE-MAP.md nicht im Repository auffindbar ist (BLOCKER) — ein nicht nachschlagbares Belegdokument trägt kein EXPLICIT.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-075",
+          "SRC-001"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-015",
+      "acceptance_criterion": "AC-015",
+      "evidence": "EV-015",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-016",
+      "title": "Recaps, Erfolgskarten und Live-Status",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-A2",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-016",
+      "acceptance_criterion": "AC-016",
+      "evidence": "EV-016",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-017",
+      "title": "Accounts, Auth und Datenmigration",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-B",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-017",
+      "acceptance_criterion": "AC-017",
+      "evidence": "EV-017",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-018",
+      "title": "Privacy, Sichtbarkeit und Moderation",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-B",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — 100-%-Matrixabdeckung und „0 Abweichungen vom Default“ sind analytische Schranken. Die inhaltliche Klausel „Profile standardmäßig privat“ stammt aus VIS-009, Quelle SRC-001 = nicht auffindbar. Der Moderations-SLA bleibt MISSING (OQ-010).",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "SRC-001"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-018",
+      "acceptance_criterion": "AC-018",
+      "evidence": "EV-018",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-019",
+      "title": "Routenempfehlungen und Feed",
+      "measurement_type": "PRODUCT_OUTCOME",
+      "measurement_type_verbatim": "PRODUCT_OUTCOME",
+      "release_gate": "GATE-B",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION für die Anforderung selbst; EXPLICIT für den Zielwert der Kennzahl (CAN-130). Getrennt geführt, weil Anforderung und Zielwert hier unterschiedlich belegt sind.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-130"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-019",
+      "acceptance_criterion": "AC-019",
+      "evidence": "EV-019",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-020",
+      "title": "Teamgründung und Beitritt",
+      "measurement_type": "PRODUCT_OUTCOME",
+      "measurement_type_verbatim": "PRODUCT_OUTCOME",
+      "release_gate": "GATE-C",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-020",
+      "acceptance_criterion": "AC-020",
+      "evidence": "EV-020",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-021",
+      "title": "Aktive Mitglieder und Teamwachstum",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-C",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-021",
+      "acceptance_criterion": "AC-021",
+      "evidence": "EV-021",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-022",
+      "title": "Gemeinsame Aktivitäten und Events",
+      "measurement_type": "PRODUCT_OUTCOME",
+      "measurement_type_verbatim": "PRODUCT_OUTCOME",
+      "release_gate": "GATE-C (PRD Release C-D)",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-022",
+      "acceptance_criterion": "AC-022",
+      "evidence": "EV-022",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-023",
+      "title": "Effort-Normalisierung",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-C",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-023",
+      "acceptance_criterion": "AC-023",
+      "evidence": "EV-023",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-024",
+      "title": "Anti-Cheat mit Confidence-Stufen und minimiertem Signalumfang",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-C",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-024",
+      "acceptance_criterion": "AC-024",
+      "evidence": "EV-024",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-025",
+      "title": "Challenges, Rankings und idempotente Rewards",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-C",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — „0 doppelte Rewards, 0 vermischte Rankings“ ist eine analytische Nullschwelle; die Anforderung selbst ist unbelegt. Die Sporttrennung stützt sich auf VIS-008, dessen Quelle ebenfalls SRC-001/SRC-003 ist.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "SRC-001",
+          "SRC-003"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-025",
+      "acceptance_criterion": "AC-025",
+      "evidence": "EV-025",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-026",
+      "title": "Team-Territory",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-D",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-026",
+      "acceptance_criterion": "AC-026",
+      "evidence": "EV-026",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-027",
+      "title": "Seasons und nach Finalisierung fachlich unveränderbare Historie",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-D",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-027",
+      "acceptance_criterion": "AC-027",
+      "evidence": "EV-027",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-028",
+      "title": "Deterministische Einzel-Reviere",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-D",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-028",
+      "acceptance_criterion": "AC-028",
+      "evidence": "EV-028",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-029",
+      "title": "Sportplatz-Challenges und Bahngold-Score",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-D",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-029",
+      "acceptance_criterion": "AC-029",
+      "evidence": "EV-029",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-030",
+      "title": "Live-Map und Beschützer-Modus",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-D",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — 100-%-Endpfad-Matrix und die Nullschwellen sind analytisch; die Anforderung selbst ist unbelegt. Die beiden einzigen bezifferbaren Werte fehlen: maximal zulässiger Freigabezeitraum und Verschleierungsradius sind MISSING (OQ-009). Ohne sie sind „zeitlich begrenzt“ und „verschleiert“ nicht prüfbar.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-030",
+      "acceptance_criterion": "AC-030",
+      "evidence": "EV-030",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-031",
+      "title": "Sturzerkennung als Assistenz",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-D",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-031",
+      "acceptance_criterion": "AC-031",
+      "evidence": "EV-031",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-032",
+      "title": "Wearables und Bike-Sensorik",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-E",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-032",
+      "acceptance_criterion": "AC-032",
+      "evidence": "EV-032",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-033",
+      "title": "Coach, Recovery, Wetter und Zyklus unter Claims-Gate",
+      "measurement_type": "RESEARCH_HYPOTHESIS",
+      "measurement_type_verbatim": "RESEARCH_HYPOTHESIS",
+      "release_gate": "GATE-E",
+      "source_type": "MISSING",
+      "source_provenance": {
+        "source_type": "MISSING",
+        "source_type_verbatim": "MISSING",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Kein belegter Schwellenwert. Es wurde ausdruecklich KEIN Wert geraten; das Requirement ist ohne Zielwert nicht abnehmbar.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-033",
+      "acceptance_criterion": "AC-033",
+      "evidence": "EV-033",
+      "has_research_plan": true
+    },
+    {
+      "id": "REQ-034",
+      "title": "Security, Datenschutz und Datenminimierung",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-A0 (Bundle-Scan, Secret- und Proxy-Kontrollen ab A0) und fortlaufend bis GATE-E",
+      "source_type": "EXPLICIT",
+      "source_provenance": {
+        "source_type": "EXPLICIT",
+        "source_type_verbatim": "EXPLICIT (Nachaudit 2026-07-19 bestätigt — klauselbeschränkt) — die einzige der 17 Zeilen, die die Beweislatte hält. Belegt sind: „0 Secrets im Client“ durch DEC-005 (user-confirmed 2026-07-19), CAN-092 (CONFIRMED) und SRC-006; „0 Rohsensorserien im serverseitigen Standard-Payload“ durch DEC-011 / CONTRA-004; „Retention Application 0, Cache 0, Analytics 0“ durch DEC-013 / CONTRA-006. Das ist keine Hochstufung, sondern die Wiedergabe protokollierter Nutzerentscheidungen. Nicht mit hochgezogen: Rate-Limit- und Timeout-Werte (MISSING — DEC-013 fordert sie und beziffert keine), Auth-Verfahren (MISSING), RLS (setzt OQ-005 voraus) und die übrigen Retentionsfristen (MISSING, OQ-009).",
+        "evidence_backed": true,
+        "clause_limited": true,
+        "cited_sources": [
+          "CAN-092",
+          "CONFIRMED",
+          "DEC-005",
+          "DEC-011",
+          "DEC-013",
+          "SRC-006",
+          "user-confirmed"
+        ],
+        "caveat": "Herkunft belegt. ACHTUNG: im PRD ausdruecklich KLAUSELBESCHRAENKT — die Einstufung gilt nur fuer die dort benannten Klauseln, nicht fuer das gesamte Requirement.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-034",
+      "acceptance_criterion": "AC-034",
+      "evidence": "EV-034",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-035",
+      "title": "Evidence Ledger und Definition of Done",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-A0 bis GATE-E (PRD Release A0-E), wirksam bereits ab P0",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — 100-%-Ledger-Abdeckung und „0 Einträge auf done mit unbeantworteten Pflichtfeldern“ sind analytische Schranken. Die Anker CAN-123 und CAN-114 führen EXPLICIT mit Quelle SRC-003 = nicht auffindbar (BLOCKER). Zusatzbefund: die Klausel „die CI-Regel muss mindestens einen echten Verstoß blockiert haben“ ist derzeit nicht erfüllbar — es existiert keine CI im Repository.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-114",
+          "CAN-123",
+          "SRC-003"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-035",
+      "acceptance_criterion": "AC-035",
+      "evidence": "EV-035",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-036",
+      "title": "Store- und Release-Gates",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-A0 bis GATE-E (PRD Release A0-E); jede Stufe ist ihr eigener Prüfpunkt",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION (Nachaudit 2026-07-19, vorher EXPLICIT) — „genannt“ ist nicht „zitiert“. Store-Policies von Apple und Google wären als verbindliche Plattformvorgabe eine zulässige EXPLICIT-Quelle, aber die Beweislatte verlangt eine konkrete Zitierung: weder Policy-Klausel noch Fassung noch Abrufdatum sind in irgendeinem Artefakt benannt. Dieselbe Lücke wie bei „WCAG AA“ in NFR-005. Die Pass-Bedingung selbst (100 % Abdeckung, 0 übersprungene Gates) bleibt prüfbar.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-036",
+      "acceptance_criterion": "AC-036",
+      "evidence": "EV-036",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-037",
+      "title": "Accessibility",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL (Item Type: CONSTRAINT / COMPLIANCE_CONTROL)",
+      "release_gate": "GATE-A0 (Accessibility-Basis) bis GATE-A2 (vollständiger Audit, spätestens vor öffentlichem Store-Release)",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION. Die WCAG-Fassung ist seit dem 2026-07-19 mit 2.2 beziffert (CAN-099) — die frühere Lücke „WCAG AA ohne Version\" ist damit geschlossen und ein Audit überhaupt erst bestehbar. EXPLICIT wird trotzdem nicht vergeben: die Beweislatte verlangt eine konkret zitierte verbindliche externe Regel, und es ist in keinem Artefakt eine Rechtsgrundlage benannt, die WCAG 2.2 AA für dieses Produkt verbindlich macht (kein Verweis auf EAA, BFSG oder eine Store-Vorgabe). Zusätzlich ist der Wortlaut des Requirements nicht ausdrücklich nutzerbestätigt.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-099"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-037",
+      "acceptance_criterion": "AC-037",
+      "evidence": "EV-037",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-038",
+      "title": "Monochromes tokenbasiertes Designsystem",
+      "measurement_type": "COMPLIANCE_CONTROL",
+      "measurement_type_verbatim": "COMPLIANCE_CONTROL",
+      "release_gate": "GATE-A0 bis GATE-A2 (Release A0-A2), erstmalige Abnahme mit GATE-A0",
+      "source_type": "EXPLICIT",
+      "source_provenance": {
+        "source_type": "EXPLICIT",
+        "source_type_verbatim": "EXPLICIT — und zwar belegt, nicht hochgestuft. Der Anker CAN-141 trägt source_type EXPLICIT, weil das monochrome, tokenbasierte Designsystem mit genau diesen vier Farbbedeutungen eine ausdrückliche Nutzerangabe vom 2026-07-19 ist. Anders als bei REQ-037 hängt die Pass-Bedingung hier nicht an NFR-005 und nicht an einer externen Norm, deren Verbindlichkeit unbelegt wäre. Sie ist eine produktinterne Designentscheidung, und die ist belegt.",
+        "evidence_backed": true,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-141"
+        ],
+        "caveat": "Herkunft belegt. ACHTUNG: im PRD ausdruecklich KLAUSELBESCHRAENKT — die Einstufung gilt nur fuer die dort benannten Klauseln, nicht fuer das gesamte Requirement.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-038",
+      "acceptance_criterion": "AC-038",
+      "evidence": "EV-038",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-039",
+      "title": "GPX-Export abgeschlossener Aktivitäten",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY (im bestehenden Modell: FUNCTIONAL CONTROL)",
+      "release_gate": "GATE-A2, spätestens vor öffentlichem v1.0-Release",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION — der Wortlaut stammt aus der Nutzerentscheidung vom 2026-07-19, ist aber nicht ausdrücklich als Anforderungstext bestätigt. Die Pass-Bedingungen sind überwiegend analytische Nullschwellen. „GPX\" ist zudem kein konkret zitierter Standard: weder die Formatversion (1.0 / 1.1) noch die Referenzanwendung sind benannt — beides MISSING.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-039",
+      "acceptance_criterion": "AC-039",
+      "evidence": "EV-039",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-041",
+      "title": "Wiederverwendung einer gespeicherten Route",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY",
+      "release_gate": "GATE-A2",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION — der Wortlaut stammt aus der Nutzerentscheidung vom 2026-07-20, ist aber nicht ausdrücklich als Anforderungstext bestätigt; der Canvas-Anker CAN-142 trägt source_type ASSUMPTION aus demselben Grund. Die Pass-Bedingungen selbst sind analytische 0-/100-%-Schranken ohne gewählten Zahlenwert — belegbedürftig und unbelegt bleibt die Anforderung selbst. Registry §8 Punkt 43.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-142"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-041",
+      "acceptance_criterion": "AC-042",
+      "evidence": "EV-043",
+      "has_research_plan": false
+    },
+    {
+      "id": "REQ-042",
+      "title": "Vergleich fachlich vergleichbarer Aktivitäten",
+      "measurement_type": "OPERATIONAL_QUALITY",
+      "measurement_type_verbatim": "OPERATIONAL_QUALITY — das Requirement misst Funktionsqualität (ist die Vergleichsaussage korrekt?). Die Vergleichslogik selbst bleibt davon getrennt RESEARCH_HYPOTHESIS bzw. MISSING, solange OQ-015 offen ist. Beides wird bewusst nicht vermischt: dass Nutzer vergleichen können sollen, ist eine Produktannahme; wie verglichen wird, ist eine offene Untersuchungsfrage.",
+      "release_gate": "GATE-A2",
+      "source_type": "ASSUMPTION",
+      "source_provenance": {
+        "source_type": "ASSUMPTION",
+        "source_type_verbatim": "ASSUMPTION für das Requirement — der Wortlaut stammt aus der Nutzerentscheidung vom 2026-07-20 und ist nicht ausdrücklich als Anforderungstext bestätigt; CAN-143 trägt ASSUMPTION aus demselben Grund. Der Zielwert der Vergleichslogik ist davon getrennt MISSING (OQ-015) — er ist in keinem Artefakt beziffert. Registry §8 Punkte 28 und 43.",
+        "evidence_backed": false,
+        "clause_limited": false,
+        "cited_sources": [
+          "CAN-143"
+        ],
+        "caveat": "Herkunft NICHT belegt. Der Zielwert ist eine plausible, aber unbestaetigte Annahme; keine Nutzerbestaetigung, keine externe Norm, keine Messreihe.",
+        "user_confirmed": false
+      },
+      "owner_status": {
+        "resolved": false,
+        "marker": "OWNER-BLOCKER (OQ-002 offen)"
+      },
+      "trace_id": "TRC-042",
+      "acceptance_criterion": "AC-043",
+      "evidence": "EV-044",
+      "has_research_plan": false
+    }
+  ],
+  "nfrs": [
+    {
+      "id": "NFR-001",
+      "title": "Distanzgenauigkeit",
+      "source_type": "ASSUMPTION",
+      "source_type_verbatim": "ASSUMPTION (vorher EXPLICIT) — festgelegt durch Nutzerentscheidung 2026-07-19",
+      "target_or_pass_condition": "< 3 % Abweichung, getrennt nachgewiesen für Run und Bike und getrennt je Plattform (iOS, Android)",
+      "source_of_target": "KEINE GEFUNDEN. Der Wert stand hier ohne Quellenangabe. Volltextsuche über docs/ am 2026-07-19: „< 3 %\" erscheint ausschließlich als Wiederholung dieses PRD-Werts. Keine Nutzerbestätigung, keine externe Norm, keine Messreihe.",
+      "evidence_status": "pending",
+      "evidence_status_verbatim": "pending — kein Code, kein Build, keine Messung. verified erst nach realen Referenzstreckentests auf festgelegten Referenzgeräten.",
+      "evidence_status_qualified": true,
+      "measurement_method": "Realer Feldtest auf einer definierten Referenzstrecke bekannter Länge; Vergleich der gefilterten Trackdistanz gegen die Referenzlänge. Mindestklasse production-verified — im Labor nicht nachweisbar.",
+      "measurement_window": "Je vollständigem Lauf über die Referenzstrecke; getrennt Run und Bike, getrennt iOS und Android. Eine Mindestanzahl Wiederholungen je Kombination nennt kein Artefakt: MISSING — ohne sie ist kein Konfidenzintervall bestimmbar und ein Einzellauf kann den Wert zufällig treffen.",
+      "reference_environment": "MISSING — OQ-003 (Minimum iOS/Android und Referenzgeräte) ist offen. Auch die Referenzstrecke selbst ist in keinem Artefakt benannt oder vermessen: MISSING.",
+      "evidence_source": "EV-002 (Gerätetest je Sport und Plattform auf Referenzstrecke), EV-004 (Drift-, Tunnel-, Sprung- und Hochgeschwindigkeits-Fixtures)",
+      "release_gate": "GATE-A0 (Stufe A0)",
+      "owner_status": {
+        "resolved": false,
+        "marker": "MISSING — OWNER-BLOCKER (OQ-002). Zusätzlich blockierend für die Messung: OQ-003, Owner der Frage „Engineering/QA\"."
+      },
+      "blocking_verbatim": ""
+    },
+    {
+      "id": "NFR-002",
+      "title": "Batterie",
+      "source_type": "ASSUMPTION",
+      "source_type_verbatim": "ASSUMPTION (vorher EXPLICIT) — Nutzerentscheidung 2026-07-19; zusätzlich durch das PRD selbst gestützt (DIV-5)",
+      "target_or_pass_condition": "< 10 % pro Stunde. Run und Bike getrennt, iOS und Android getrennt, je mindestens ein Messlauf.",
+      "source_of_target": "KEINE GEFUNDEN. Der Wert stand ohne Quelle und wird von der Quelle selbst als „Ziel\" bezeichnet. Die REQ-003-Messmodellzelle und docs/traceability.md halten ausdrücklich fest, dass der Wert „für dieses Produkt nicht empirisch belegt\" ist.",
+      "evidence_status": "pending",
+      "evidence_status_verbatim": "pending — kein Code, kein Gerätetest. Nachweis erst mit festgelegten Referenzgeräten, dokumentiertem Display-, Netzwerk- und GPS-Sampling-Zustand, aktivem Background-Tracking und mindestens einem Messlauf je Sport und je Plattform.",
+      "evidence_status_qualified": true,
+      "measurement_method": "Realer Gerätetest mit aktivem Background-Tracking über eine zusammenhängende Stunde. Zwingend zu dokumentieren, weil sonst nicht vergleichbar: Display-Zustand (an/aus, Helligkeit), Netzwerkzustand (WLAN/Mobilfunk/Flugmodus), GPS-Sampling-Rate, Kartendarstellung aktiv/inaktiv, Ausgangsladestand, Umgebungstemperatur.",
+      "measurement_window": "Eine zusammenhängende Stunde aktives Tracking; Wiederholung vor jedem Gate ab A0.",
+      "reference_environment": "MISSING — „definierte Referenzgeräte\" werden gefordert, aber nirgends definiert (OQ-003). Ohne Geräteliste ist der Wert nicht vergleichbar: derselbe Code ergibt auf unterschiedlichen Geräten stark abweichende Werte.",
+      "evidence_source": "EV-003 (30-Minuten-Kill-/Background-Test) deckt das Background-Verhalten ab, nicht die Stundenmessung. Für die Batteriemessung selbst benennt kein Artefakt eine eigene EV-ID: MISSING. CAN-116 („Batterietests\") existiert, ist aber keine EV-ID.",
+      "release_gate": "GATE-A0 (Stufe A0)",
+      "owner_status": {
+        "resolved": false,
+        "marker": "MISSING — OWNER-BLOCKER (OQ-002); Referenzgeräte OQ-003 („Engineering/QA\")"
+      },
+      "blocking_verbatim": ""
+    },
+    {
+      "id": "NFR-003",
+      "title": "Zuverlässigkeit",
+      "source_type": "ASSUMPTION",
+      "source_type_verbatim": "ASSUMPTION (vorher EXPLICIT)",
+      "target_or_pass_condition": "Nullschwelle: 0 verlorene Aktivitäten über Kill- und Migrations-Fixtures, 0 inkonsistente Indexe nach Migration, jede Migration idempotent wiederholbar. Session-Recovery gelingt in 100 % der 30-Minuten-Kill-Tests je Plattform und je Sportart.",
+      "source_of_target": "KEINE EIGENSTÄNDIGE QUELLE GEFUNDEN. Die Nullschwelle ist keine gewählte Zahl, sondern die logische Übersetzung der Anforderung selbst („kein Datenverlust\" = 0) — insoweit nicht belegbedürftig. Belegbedürftig und unbelegt sind: die Anforderung selbst (EXPLICIT ohne Quelle) und die Operationalisierung „30 Minuten\", „je Plattform\", „je Sportart\" aus EV-003.",
+      "evidence_status": "pending",
+      "evidence_status_verbatim": "pending — beide EV-IDs sind definiert, aber es existiert kein Code. Kein Testlauf hat stattgefunden.",
+      "evidence_status_qualified": true,
+      "measurement_method": "Kontrolliertes Beenden der App bzw. erzwungener Absturz während laufender Aufzeichnung; anschließende Prüfung auf Vollständigkeit des Tracks und erfolgreiche Wiederherstellung der Session. Ergänzend Migrations-Fixtures gegen die lokale Datenbank.",
+      "measurement_window": "30 Minuten je Kill-/Background-Test, je Plattform und je Sportart; Wiederholung vor jedem Gate ab A0.",
+      "reference_environment": "MISSING — OQ-003. Zusätzlich relevant und nicht spezifiziert: die OS-Versionen, da das Kill-Verhalten von iOS und Android versionsabhängig ist (RISK-001 „Background-GPS wird durch OS gedrosselt oder beendet\", Severity critical).",
+      "evidence_source": "EV-003 (30-Minuten-Kill-/Background-Test je Plattform und Sport), EV-005 (SQLite-Repository-Tests, Kill-Test und Migrations-Fixtures)",
+      "release_gate": "GATE-A0 (Stufe A0)",
+      "owner_status": {
+        "resolved": false,
+        "marker": "MISSING — OWNER-BLOCKER (OQ-002)"
+      },
+      "blocking_verbatim": ""
+    },
+    {
+      "id": "NFR-004",
+      "title": "Performance",
+      "source_type": "BLOCKER",
+      "source_type_verbatim": "BLOCKER (vorher EXPLICIT) — BLOCKER statt MISSING, weil die Definition greift: ohne Zielwert ist ein Gate bzw. Test nicht belastbar planbar. Der Geo-Lasttest ist als Pflicht vor Gate D festgeschrieben, hat aber keine Pass/Fail-Bedingung. Ein Test ohne Bestehensgrenze kann nicht bestanden werden — er kann nur behauptet werden.",
+      "target_or_pass_condition": "MISSING. Wörtlich aus docs/traceability.md: „NFR-004 fordert viewportbasierte Kartenlayer und einen Geo-Lasttest vor D, nennt aber keine Millisekunden- oder Bildratenschwelle: MISSING.\" Ebenda: „Entscheidungsschwelle MISSING — Quorumswert, Verfallsrate und Performanceschwelle (NFR-004) sind unbeziffert. Vor Gate D zu entscheiden.\"",
+      "source_of_target": "KEINE GEFUNDEN — es gibt keinen Zielwert, den man belegen könnte. „Flüssig\" ist kein Zielwert, sondern ein Adjektiv.",
+      "evidence_status": "blocked",
+      "evidence_status_verbatim": "blocked — nicht pending. Der Test ist benannt, kann aber kein Ergebnis liefern, solange keine Schwelle existiert. Der Nachweis scheitert nicht an fehlendem Code, sondern an der fehlenden Bestehensbedingung — das bliebe auch mit fertigem Code so.",
+      "evidence_status_qualified": true,
+      "measurement_method": "Teilweise beschrieben: Karten-Lasttest auf realem Gerät mit realer Datenmenge (Stufe 3, EV-026). Was gemessen wird, bleibt offen. Für die A0-Aussage „Tracking-UI flüssig\" benennt kein Artefakt überhaupt eine Testmethode.",
+      "measurement_window": "MISSING — kein Artefakt definiert ein Messfenster oder eine Lastdauer.",
+      "reference_environment": "MISSING, zweifach: (1) Geräte (OQ-003); (2) Datenmenge — gefordert sind „reale Aktivitätsdichten aus mindestens einer Stadt\", weil synthetische Gleichverteilungen die Ballung unterschätzen; eine solche Datenbasis existiert nicht.",
+      "evidence_source": "EV-026 (Geo-Fixtures, Simulation und Karten-Lasttest) — deckt nur den Territory-Anteil ab Stufe D. Für „Tracking-UI flüssig\" ab A0 existiert KEINE EV-ID: MISSING.",
+      "release_gate": "GATE-A0 (Klausel „Tracking-UI flüssig\", unbeziffert) und GATE-D (Geo-Lasttest, unbeziffert)",
+      "owner_status": {
+        "resolved": false,
+        "marker": "MISSING — OWNER-BLOCKER (OQ-002); Schwellenentscheidung zusätzlich an OQ-008 gebunden"
+      },
+      "blocking_verbatim": ""
+    },
+    {
+      "id": "NFR-005",
+      "title": "Accessibility",
+      "source_type": "ASSUMPTION",
+      "source_type_verbatim": "ASSUMPTION (vorher EXPLICIT)",
+      "target_or_pass_condition": "100 % Abdeckung, 0 Zustände ohne zusätzliches Symbol oder Textlabel. „Kein Prozentziel unterhalb von 100 — die Anforderung ist eine Schranke, keine Quote.\"",
+      "source_of_target": "TEILWEISE — eine der beiden Lücken ist seit dem 2026-07-19 geschlossen, die andere nicht. (1) Fassung: nachgetragen. Die frühere Angabe „WCAG AA\" stand ohne Version, obwohl 2.0 AA, 2.1 AA und 2.2 AA unterschiedliche Erfolgskriterien haben. Die Nutzerentscheidung vom 2026-07-19 beziffert die Fassung in CAN-099 und REQ-037 als 2.2. (2) Rechtsgrundlage: weiterhin MISSING. In keinem Artefakt wird eine Rechtsgrundlage zitiert, die WCAG 2.2 AA für dieses Produkt verbindlich macht — kein Verweis auf EAA, BFSG oder eine Store-Vorgabe. Die Beweislatte „eine verbindliche externe Regel wird konkret zitiert\" bleibt damit unerfüllt: die Norm ist jetzt vollständig benannt, ihre Verbindlichkeit nicht.",
+      "evidence_status": "not-planned",
+      "evidence_status_verbatim": "not-planned (korrigiert 2026-07-19, vorher pending). Zwei Schritte, beide begründet: (1) pending ist ausgeschlossen — nach der projektweiten Semantik setzt pending eine implementierte Instrumentierung voraus, und es existiert weder Code noch Build noch CI. (2) planned wäre ebenfalls zu hoch. planned verlangt, dass Metrik, Berechnung und Messverfahren definiert sind. Metrik und Pass-Bedingung sind es — das Verfahren nicht: Referenzgeräte (OQ-003), Screenreader-Matrix (VoiceOver/TalkBack in welchen OS-Versionen), Schriftgrößenstufen und Kontrastmessmethode sind MISSING. Was nicht spezifiziert ist, kann nicht instrumentiert werden; ein Zielwert ohne Messverfahren ist noch kein Messkonzept. Konsistent mit EV-037 (not-planned, Registry §6.7).",
+      "evidence_status_qualified": true,
+      "measurement_method": "Kontrastprüfung, Dynamic-Type-/Font-Scaling-Prüfung und Screenreader-Durchlauf mit VoiceOver UND TalkBack in Light und Dark Mode je Screen (EV-037). Der Token-Review gehört seit dem 2026-07-19 nicht mehr hierher — er ist der Designsystem-Nachweis (EV-038 zu REQ-038) und war in EV-014 mit dem Accessibility-Nachweis vermischt.",
+      "measurement_window": "Je ausgeliefertem Screen, vor jedem Gate ab A0 (REQ-037 läuft über Release A0-A2: Accessibility-Basis ab A0, vollständiger Audit spätestens A2). Kein zeitbasiertes Fenster — es ist eine vollständige Abdeckungsprüfung.",
+      "reference_environment": "MISSING — weder Geräte (OQ-003) noch die Screenreader-Matrix sind festgelegt: VoiceOver und TalkBack in welchen OS-Versionen, welche Schriftgrößenstufen, welche Kontrastmessmethode.",
+      "evidence_source": "EV-037 (WCAG-2.2-AA-Audit, VoiceOver- und TalkBack-Durchlauf je Plattform, Dynamic-Type-/Font-Scaling-Prüfung, dokumentierte Kontrastprüfung). Ersetzt das deprecatete EV-014.",
+      "release_gate": "GATE-A0 bis GATE-A2, erstmalige Abnahme mit GATE-A0, vollständiger Audit spätestens GATE-A2 vor öffentlichem Store-Release",
+      "owner_status": {
+        "resolved": false,
+        "marker": "MISSING — OWNER-BLOCKER (OQ-002)"
+      },
+      "blocking_verbatim": ""
+    },
+    {
+      "id": "NFR-006",
+      "title": "Datenschutz",
+      "source_type": "BLOCKER",
+      "source_type_verbatim": "BLOCKER (vorher EXPLICIT) — BLOCKER, weil eine Architekturentscheidung ohne den fehlenden Zielwert nicht belastbar planbar ist: DEC-012 schreibt vor, dass Datenmodell und Event-Historie Identität und historische Aggregate technisch trennen müssen — vor Erstellung und Finalisierung des Datenbankschemas. Diese Trennung hängt an den Retentionsfristen, die MISSING sind (OQ-009). Das Schema kann damit nicht belastbar entworfen werden.",
+      "target_or_pass_condition": "Nur teilweise bestimmt. BESTIMMT durch DEC-012: Löschumfang abschließend aufgezählt; historische Daten überleben nur wirksam anonymisiert, sonst Löschung. BESTIMMT durch DEC-013 für den A0-Routing-Proxy: Retention 0 für Koordinaten-Payload, technische Logs max. 7 Tage, eu-central-1. UNBESTIMMT: Aufbewahrungsfristen für GPS-, Health- und Live-Daten allgemein (OQ-009); Hosting-Region des eigentlichen Backends (OQ-005); Verarbeitungsregion des Routing-Anbieters.",
+      "source_of_target": "GEMISCHT. Belegte Nutzerquelle für den Löschumfang: DEC-012 und CONTRA-005 (Nutzerentscheidung 2026-07-19), geführt als SRC-006. Belegte Nutzerquelle für die A0-Proxy-Baseline: DEC-013. KEINE Quelle für „EU-orientiertes Hosting\" als Zielwert und KEINE für Retentionsfristen.",
+      "evidence_status": "blocked",
+      "evidence_status_verbatim": "blocked — nicht pending. Mehrere Nachweise haben keine Pass/Fail-Bedingung: Retentionsfristen fehlen (OQ-009), ein Prüfverfahren für „wirksam anonymisiert\" fehlt (Befund B6), und für die Schema-Trennung existiert keine EV-ID. Das ist kein Code-Problem: auch mit fertigem Code bliebe unentscheidbar, ob der Test bestanden ist.",
+      "evidence_status_qualified": true,
+      "measurement_method": "Datenflussdiagramm mit 100 % Abdeckung, RLS-Tests, Löschungsnachweis (EV-034, EV-017). Für „wirksam anonymisiert\" existiert KEIN Prüfverfahren: docs/validation/validation-report.md führt das als Befund B6 — ohne definiertes Verfahren ist Anonymisierungswirksamkeit nicht prüfbar.",
+      "measurement_window": "Kein Zeitfenster — Abdeckungs- und Nullschwellenprüfung je Datenfluss. Für Retention wäre das Fenster die jeweilige Frist selbst; genau die fehlt.",
+      "reference_environment": "MISSING — Backend nicht entschieden (OQ-005); Verarbeitungsregion und Unterauftragsverarbeiter des Routing-Anbieters laut DEC-013 erst vor dem ersten externen Feldtest zu dokumentieren.",
+      "evidence_source": "EV-017 (E2E-Flow, Offline-Test und Löschungsnachweis), EV-034 (Security-Review, RLS-Tests, Datenflussdiagramm und Löschungsnachweis), EV-027 (teilweise, für anonymisierte Historie), EV-042 (Trennung von Identität und historischen Aggregaten — neu vergeben 2026-07-19; der Nachweis trägt evidence_status: blocked).",
+      "release_gate": "GATE-A0 bis GATE-E; harte Punkte: vor Finalisierung des Datenbankschemas (DEC-012) und GATE-B",
+      "owner_status": {
+        "resolved": false,
+        "marker": "MISSING — OWNER-BLOCKER (OQ-002); OQ-009 nominell „Privacy/Product\", OQ-005 „Engineering\" — beides Rollen, keine Persone"
+      },
+      "blocking_verbatim": ""
+    },
+    {
+      "id": "NFR-007",
+      "title": "Sicherheit",
+      "source_type": "EXPLICIT",
+      "source_type_verbatim": "EXPLICIT — klauselbeschränkt, siehe Aufschlüsselung unten. Diese Einschränkung ist Teil der Klassifikation, nicht eine Fußnote dazu.",
+      "target_or_pass_condition": "BESTIMMT: 0 Secrets im Client, ab A0 auch für den Routing-Proxy-Key; 0 Endpunkte ohne Rate Limit und serverseitige Validierung. UNBESTIMMT: die konkreten Rate-Limit-Werte. DEC-013 fordert „Rate Limit, Size-Limit, maximale Wegpunktzahl, Timeout, Kill Switch\" — ohne eine einzige Zahl.",
+      "source_of_target": "GEFUNDEN — für eine Klausel. „Keine Secrets im Client\" ist durch eine belegte Nutzerentscheidung gedeckt: DEC-005 (user-confirmed, 2026-07-19), CAN-092 (Source Type CONFIRMED), CONTRA-002 (resolved), geführt als SRC-006. Die technische Begründung ist konkret und nachprüfbar: EXPO_PUBLIC_ wird ins JS-Bundle inlined und ist aus jedem Build extrahierbar. Für die übrigen Klauseln: KEINE Quelle gefunden.",
+      "evidence_status": "pending",
+      "evidence_status_verbatim": "pending — die Testmethode ist konkret und die Pass-Bedingung für die Kernklausel eindeutig; es fehlt ausschließlich der Gegenstand: kein Code, kein Build, kein Bundle. Deshalb pending und nicht blocked. Die Klausel „Rate Limits\" ist dagegen ohne Zahlenwert nicht prüfbar und insoweit blockiert.",
+      "evidence_status_qualified": true,
+      "measurement_method": "Bundle-Scan des ausgelieferten JS-Bundles auf Routing-Provider-Keys; Proxy-Integrationstest; Security-Review; RLS-Tests; Endpunkt-Inventar gegen Rate-Limit- und Validierungsabdeckung. Mindestklasse real-boundary-smoke — „ein gemockter Routing-Response verdeckt genau den NFR-007-Pfad\".",
+      "measurement_window": "Kein Zeitfenster — Nullschwellenprüfung je Build (Bundle-Scan) und je Endpunkt (Rate Limit, Validierung). Ab A0 fortlaufend bis GATE-E.",
+      "reference_environment": "Für den Bundle-Scan: ein realer Release-Build je Plattform — existiert nicht. Für die Proxy-Kontrollen: die A0-Laufzeit laut CAN-096 (AWS Lambda + API Gateway, eu-central-1) — ausdrücklich nur dokumentiert, nicht gebaut, keine AWS-Ressource angelegt.",
+      "evidence_source": "ASM-103 (Bundle-Scan ohne Routing-Key plus Proxy-Integrationstest), EV-034 (Security-Review, RLS-Tests, Datenflussdiagramm), EV-006 (Routing-Service-Tests)",
+      "release_gate": "GATE-A0 bis GATE-E. DEC-005 stellt ausdrücklich fest: „NFR-007 gilt ab A0-E\" — nicht erst ab Stufe B.",
+      "owner_status": {
+        "resolved": false,
+        "marker": "MISSING — OWNER-BLOCKER (OQ-002)"
+      },
+      "blocking_verbatim": ""
+    },
+    {
+      "id": "NFR-008",
+      "title": "Wartbarkeit",
+      "source_type": "MISSING",
+      "source_type_verbatim": "MISSING (vorher EXPLICIT) — MISSING und nicht BLOCKER: die Anforderung blockiert derzeit kein Gate, weil kein Gate sie referenziert. Genau das ist der Befund — sie ist wirkungslos, nicht blockierend.",
+      "target_or_pass_condition": "MISSING. Vier qualitative Zusagen ohne jede Schwelle. Insbesondere ist keine Testabdeckungsquote genannt — weder hier noch in einem anderen Artefakt.",
+      "source_of_target": "KEINE GEFUNDEN. Volltextsuche über docs/ am 2026-07-19: die Zeichenfolge „NFR-008\" erschien im gesamten Repository genau einmal — in ihrer eigenen Definitionszeile. Kein Requirement, kein AC, keine EV-ID, keine Traceability-Zeile, kein Gate und kein Risiko referenzierte NFR-008. Verwaisung inzwischen aufgehoben (siehe unten), der fehlende Zielwert nicht.",
+      "evidence_status": "not-planned",
+      "evidence_status_verbatim": "not-planned — nicht pending. Kein Artefakt sieht überhaupt einen Nachweis für NFR-008 vor. pending wäre die falsche Aussage: es steht nichts aus, weil nichts geplant ist.",
+      "evidence_status_qualified": true,
+      "measurement_method": "MISSING — keine benannt. Ableitbar wäre: TypeScript-Compiler im strict-Modus als CI-Gate, Importgraph-Prüfung der Domainmodule, Schema-Versionsprüfung, Coverage-Report. Nichts davon ist in einem Artefakt festgelegt, deshalb wird es hier nicht als Testmethode geführt.",
+      "measurement_window": "MISSING — eine CI-durchgesetzte Eigenschaft wäre je Commit oder je Build zu prüfen; kein Artefakt legt das fest.",
+      "reference_environment": "MISSING — es existiert keine CI im Repository. docs/ID-REGISTRY.md §9 hält fest, dass überhaupt kein ausführbares Prüfwerkzeug vorhanden ist.",
+      "evidence_source": "KEINE. Kein EV-Eintrag referenziert NFR-008. EV-035 (CI-Regel, Ledger-Review, Gate-Checkliste) gehört zu REQ-035 und deckt die Evidence-Disziplin ab, nicht die Wartbarkeit.",
+      "release_gate": "MISSING — kein Gate referenziert NFR-008. Die Gate-Tabelle nennt es nicht. Die Zuordnung ist Gegenstand von OQ-013 und wird hier nicht geraten.",
+      "owner_status": {
+        "resolved": false,
+        "marker": "MISSING — OWNER-BLOCKER (OQ-002)"
+      },
+      "blocking_verbatim": ""
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "OQ-001",
+      "title": "finaler öffentlicher Produktname",
+      "status": "open",
+      "owner": "Product/Legal",
+      "due": "vor Gate A2",
+      "default_if_unresolved": "kein öffentlicher Store-Release"
+    },
+    {
+      "id": "OQ-002",
+      "title": "finaler Repository-Owner/DRI",
+      "status": "open",
+      "owner": "Product",
+      "due": "vor P0 Start",
+      "default_if_unresolved": "Umsetzung bleibt organisatorisch unzugeordnet"
+    },
+    {
+      "id": "OQ-003",
+      "title": "Minimum iOS/Android und Referenzgeräte",
+      "status": "open",
+      "owner": "Engineering/QA",
+      "due": "vor A0 Feldtest",
+      "default_if_unresolved": "keine Gate-Abnahme"
+    },
+    {
+      "id": "OQ-004",
+      "title": "Karten-/Routinganbieter",
+      "status": "open",
+      "owner": "Engineering/Product",
+      "due": "vor A2/B",
+      "default_if_unresolved": "Provider-Adapter bleibt experimentell"
+    },
+    {
+      "id": "OQ-005",
+      "title": "Backend",
+      "status": "open",
+      "owner": "Engineering",
+      "due": "vor B",
+      "default_if_unresolved": "kein Social-/Territory-Start"
+    },
+    {
+      "id": "OQ-006",
+      "title": "Claims-Whitelist",
+      "status": "open",
+      "owner": "Product/Legal",
+      "due": "vor A1 Public Beta",
+      "default_if_unresolved": "Health-Copy bleibt intern/Test"
+    },
+    {
+      "id": "OQ-007",
+      "title": "Geschäftsmodell",
+      "status": "open",
+      "owner": "Product/Business",
+      "due": "vor C",
+      "default_if_unresolved": "keine kostensteigernden Scale-Entscheidungen"
+    },
+    {
+      "id": "OQ-008",
+      "title": "Effort-/Territory-/Bahngold-Startwerte",
+      "status": "open",
+      "owner": "Product/Data",
+      "due": "vor C/D",
+      "default_if_unresolved": "Feature Flags bleiben aus"
+    },
+    {
+      "id": "OQ-009",
+      "title": "Datenretention für GPS, Health und Live",
+      "status": "open",
+      "owner": "Privacy/Product",
+      "due": "vor B/D",
+      "default_if_unresolved": "minimales Retention-Prinzip"
+    },
+    {
+      "id": "OQ-010",
+      "title": "Moderations-SLA und Betrieb",
+      "status": "open",
+      "owner": "Operations",
+      "due": "vor B Public",
+      "default_if_unresolved": "UGC bleibt begrenzt/deaktiviert"
+    },
+    {
+      "id": "OQ-011",
+      "title": "Ablageort und Deployment-Ziel des A0-Routing-Proxys im Repository",
+      "status": "resolved",
+      "owner": "Engineering",
+      "due": "erledigt",
+      "default_if_unresolved": "entfällt — siehe Auflösung unten"
+    },
+    {
+      "id": "OQ-012",
+      "title": "Privacy-minimierte Telemetrie für Routenempfehlungen (CAN-130 / REQ-019 / AC-041)",
+      "status": "open",
+      "owner": "MISSING (OQ-002)",
+      "due": "vor Gate B",
+      "default_if_unresolved": "kein Gate-B-Erfolgsnachweis für REQ-019; CAN-130 gilt als nicht empirisch validiert"
+    },
+    {
+      "id": "OQ-013",
+      "title": "Messdefinition, Zielwert und Gate-Zuordnung für NFR-008 (Wartbarkeit)",
+      "status": "open",
+      "owner": "MISSING (OQ-002)",
+      "due": "MISSING — kein Gate referenziert NFR-008",
+      "default_if_unresolved": "NFR-008 bleibt wirkungslos"
+    },
+    {
+      "id": "OQ-014",
+      "title": "Stichproben- und Auswertungsregel für CAN-130 / AC-041",
+      "status": "open",
+      "owner": "MISSING (OQ-002)",
+      "due": "vor Gate B",
+      "default_if_unresolved": "Kennzahl wird nicht abschließend bewertet"
+    },
+    {
+      "id": "OQ-015",
+      "title": "Vergleichbarkeits- und Streckenähnlichkeitsdefinition für den Aktivitätsvergleich (**REQ-042**)",
+      "status": "open",
+      "owner": "MISSING (OQ-002)",
+      "due": "vor Gate A2",
+      "default_if_unresolved": "Aktivitätsvergleich wird nicht implementiert; REQ-041 ist davon unberührt"
+    },
+    {
+      "id": "OQ-016",
+      "title": "Referenz-Fremdanwendung für den GPX-Kompatibilitätsnachweis (REQ-039)",
+      "status": "open",
+      "owner": "MISSING (OQ-002)",
+      "due": "vor Gate A2",
+      "default_if_unresolved": "AC-039 Kriterium (d) bleibt nicht reproduzierbar prüfbar"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "CONTRA-001",
+      "registry_status": "resolved",
+      "ledger_status": "resolved (2026-07-19)",
+      "divergence": false,
+      "blocking": false,
+      "status_model": {
+        "resolution_status": "accepted",
+        "evidence_status": "not-required",
+        "blocked_gates": [],
+        "blocked_activities": [],
+        "evidence_gate": "—",
+        "blocking_derivation": [
+          "(Hinweis: kein auswertbares Gate (evidence_gate = '—') — Gate-Klausel liefert false und wird NICHT durch eine Taetigkeit ersetzt)"
+        ],
+        "outcome": "4-vollstaendig",
+        "decision_reference": "CONTRA-001 (Ledger), CLAUDE.md-Korrektur",
+        "evidence_reference": "—"
+      }
+    },
+    {
+      "id": "CONTRA-002",
+      "registry_status": "resolved",
+      "ledger_status": "resolved (2026-07-19)",
+      "divergence": false,
+      "blocking": true,
+      "status_model": {
+        "resolution_status": "accepted",
+        "evidence_status": "pending",
+        "blocked_gates": [
+          "A0"
+        ],
+        "blocked_activities": [
+          "implementation",
+          "release"
+        ],
+        "evidence_gate": "A0",
+        "blocking_derivation": [
+          "current_gate 'A0' IN blocked_gates ['A0']"
+        ],
+        "outcome": "6-blockierend-fuers-aktuelle-gate",
+        "decision_reference": "DEC-005 (user-confirmed), CONTRA-002 (Ledger), SRC-006",
+        "evidence_reference": "ASM-103 (Bundle-Scan ohne Routing-Key + Proxy-Integrationstest), EV-034"
+      }
+    },
+    {
+      "id": "CONTRA-003",
+      "registry_status": "resolved",
+      "ledger_status": "resolved (2026-07-19)",
+      "divergence": false,
+      "blocking": true,
+      "status_model": {
+        "resolution_status": "accepted",
+        "evidence_status": "pending",
+        "blocked_gates": [],
+        "blocked_activities": [
+          "documentation"
+        ],
+        "evidence_gate": "—",
+        "blocking_derivation": [
+          "current_activity 'documentation' IN blocked_activities ['documentation']",
+          "(Hinweis: kein auswertbares Gate (evidence_gate = '—') — Gate-Klausel liefert false und wird NICHT durch eine Taetigkeit ersetzt)"
+        ],
+        "outcome": "6-blockierend-fuers-aktuelle-gate",
+        "decision_reference": "CONTRA-003 (Ledger), docs/decisions/open-questions.md als kanonisches Register",
+        "evidence_reference": "MISSING — siehe Begründung unten"
+      }
+    },
+    {
+      "id": "CONTRA-004",
+      "registry_status": "resolved",
+      "ledger_status": "resolved (Entscheidung Nutzer 2026-07-19) — Achsen siehe Statusmodell-Tabelle: evidence_status = pending, blocking = true, evidence_gate C, blocked_gates [C, D], blocked_activities [competition-release, territory-release]",
+      "divergence": false,
+      "blocking": true,
+      "status_model": {
+        "resolution_status": "accepted",
+        "evidence_status": "pending",
+        "blocked_gates": [
+          "C",
+          "D"
+        ],
+        "blocked_activities": [
+          "competition-release",
+          "territory-release"
+        ],
+        "evidence_gate": "C",
+        "blocking_derivation": [
+          "current_gate 'C' IN blocked_gates ['C', 'D']"
+        ],
+        "outcome": "6-blockierend-fuers-aktuelle-gate",
+        "decision_reference": "DEC-011",
+        "evidence_reference": "EV-024, EV-034 (teilweise)"
+      }
+    },
+    {
+      "id": "CONTRA-005",
+      "registry_status": "resolved",
+      "ledger_status": "resolved (Entscheidung Nutzer 2026-07-19) — Achsen siehe Statusmodell-Tabelle: evidence_status = pending, blocking = true, evidence_gate B, blocked_gates [B], blocked_activities [database-schema-finalization, account-release]; Schema-Trennung Identität ↔ Aggregat nicht umgesetzt (EV-042, evidence_status = blocked)",
+      "divergence": false,
+      "blocking": true,
+      "status_model": {
+        "resolution_status": "accepted",
+        "evidence_status": "pending",
+        "blocked_gates": [
+          "B"
+        ],
+        "blocked_activities": [
+          "database-schema-finalization",
+          "account-release"
+        ],
+        "evidence_gate": "B",
+        "blocking_derivation": [
+          "current_gate 'B' IN blocked_gates ['B']"
+        ],
+        "outcome": "6-blockierend-fuers-aktuelle-gate",
+        "decision_reference": "DEC-012",
+        "evidence_reference": "EV-017, EV-027 (teilweise), EV-042 (neu 2026-07-19, für „Datenmodell trennt Identität und historische Aggregate\")"
+      }
+    },
+    {
+      "id": "CONTRA-006",
+      "registry_status": "resolved",
+      "ledger_status": "resolved (Entscheidung Nutzer 2026-07-19) — Achsen siehe Statusmodell-Tabelle: evidence_status = pending, blocking = true, blocked_gates [A0], blocked_activities [field-test, release]. Der frühere Mischwert DESIGN-RESOLVED / EVIDENCE-PENDING ist als status unzulässig und wurde auf die zwei Achsen aufgeteilt",
+      "divergence": false,
+      "blocking": true,
+      "status_model": {
+        "resolution_status": "accepted",
+        "evidence_status": "pending",
+        "blocked_gates": [
+          "A0"
+        ],
+        "blocked_activities": [
+          "field-test",
+          "release"
+        ],
+        "evidence_gate": "A0",
+        "blocking_derivation": [
+          "current_gate 'A0' IN blocked_gates ['A0']"
+        ],
+        "outcome": "6-blockierend-fuers-aktuelle-gate",
+        "decision_reference": "OQ-011, DEC-013, ADR zum A0-Routing-Proxy = MISSING",
+        "evidence_reference": "EV-006, EV-034; A0-Routing-Evidence (a)…(n) laut docs/EVIDENCE-LEDGER.md"
+      }
+    }
+  ],
+  "contra_006_criterion": {
+    "criterion": "Erfolgreiches Dokumentationskriterium fuer CONTRA-006 — fuenf Einzelaussagen, kein Pauschalurteil 'RESOLVED'.",
+    "statements": [
+      {
+        "nr": 1,
+        "aussage": "status = resolved",
+        "erfuellt": true,
+        "quelle": "docs/ID-REGISTRY.md §6.11.1, docs/decisions/decision-log.md"
+      },
+      {
+        "nr": 2,
+        "aussage": "resolution_status = accepted",
+        "erfuellt": true,
+        "quelle": "docs/ID-REGISTRY.md §6.11.1"
+      },
+      {
+        "nr": 3,
+        "aussage": "evidence_status = pending (sichtbar als ausstehend gefuehrt)",
+        "erfuellt": true,
+        "quelle": "docs/ID-REGISTRY.md §6.11.1, docs/EVIDENCE-LEDGER.md"
+      },
+      {
+        "nr": 4,
+        "aussage": "blocking = true fuer A0-Feldtest und Release (abgeleitet, nicht gesetzt)",
+        "erfuellt": true,
+        "ableitung": [
+          "current_gate 'A0' IN blocked_gates ['A0']"
+        ],
+        "quelle": "Registry §3.1 Ableitungsformel via derive_blocking()"
+      },
+      {
+        "nr": 5,
+        "aussage": "vollstaendiger Ledger-Eintrag vorhanden",
+        "erfuellt": true,
+        "quelle": "docs/decisions/decision-log.md"
+      }
+    ],
+    "keine_ungueltigen_registry_statuswerte": true,
+    "wortlaut": "Die Designentscheidung fuer CONTRA-006 ist dokumentiert und akzeptiert. Die Implementation Evidence ist sichtbar als pending gefuehrt und blockiert die dafuer definierten spaeteren Gates.",
+    "nicht_behauptet": "Dies ist KEINE Aussage darueber, dass der Nachweis erbracht waere. evidence_status bleibt pending; es existiert kein Code, kein Build, kein Feldtest und keine AWS-Ressource.",
+    "decision_reference_missing": "Der als decision_reference vorgegebene 'ADR zum A0-Routing-Proxy' existiert im Repository nicht (MISSING). Er wurde NICHT durch DEC-013 ersetzt."
+  },
+  "validation": {
+    "validator": "scratchpad/validate_intake.py",
+    "authored_in_this_run": true,
+    "run_date": "2026-07-20",
+    "run_scope": "Repository docs/** gegen docs/ID-REGISTRY.md; Quelldokumente SRC-001..SRC-004 nur gelesen",
+    "checks_total": 38,
+    "checks_passed": 32,
+    "checks_failed": 6,
+    "overall": "FAIL",
+    "failed_check_ids": [
+      "C2",
+      "C3c",
+      "C3d",
+      "C7",
+      "C8",
+      "C12"
+    ],
+    "delta_to_previous_run": {
+      "previous_run_date": "2026-07-19",
+      "previous_passed": 33,
+      "previous_failed": 5,
+      "newly_failing": [
+        "C2"
+      ],
+      "cause": "C2 faellt neu, weil docs/plans/2026-07-20-p0-spikes.md in dieser Runde neu angelegt wurde und in seiner Compliance-Fusszeile fuenf Nullwerte ohne Begruendung fuehrt (Zeilen 390-394). Kein bestehender Befund wurde behoben; die Zahl ist nicht gestiegen, weil etwas repariert wurde."
+    },
+    "failed_check_diagnosis": {
+      "C2": {
+        "nature": "Dokumentdefekt (neu in dieser Runde)",
+        "owner": "Owner docs/plans/2026-07-20-p0-spikes.md",
+        "note": "5 Feldwerte 'none/keine/keiner' ohne Begruendungstext. Inhaltlich sind es Abwesenheitsaussagen; der Validator kann Abwesenheit nicht von einer Luecke unterscheiden, solange keine Begruendung danebensteht."
+      },
+      "C3c": {
+        "nature": "Validator-Limitation (Einzeltreffer)",
+        "owner": "Owner docs/traceability.md",
+        "note": "traceability.md:1588 nennt TRC-040 in PROSA innerhalb der Zelle 'Vision Item'; der Ankerwert der Zelle ist VIS-003. Die spaltenbasierte Regel kann 'ID als Ankerwert' nicht von 'ID im Fliesstext derselben Zelle' trennen. NICHT als bestanden gewertet und die Regel NICHT nachtraeglich aufgeweicht."
+      },
+      "C3d": {
+        "nature": "Validator-Limitation (Einzeltreffer)",
+        "owner": "Owner docs/traceability.md",
+        "note": "traceability.md:480 nennt VIS-014 als Begruendung ('dafuer wurde eigens VIS-014 reserviert'), nicht als erfuellten Anker. Der zeilenweise MISSING/BLOCKER-Markersuchlauf findet den Marker nicht in derselben Zeile. Gleiche Behandlung wie C3c."
+      },
+      "C7": {
+        "nature": "strukturell unerreichbar",
+        "owner": "—",
+        "note": "Erfordert Ausfuehrung gegen laufenden Code. Es existiert kein Code, kein mobile/, kein infra/; Implementierung ist in dieser Runde ausdruecklich verboten. Ein Dokumentenlauf KANN dieses Kriterium nicht bestehen. Bleibt NICHT ERFUELLT, wird nicht wegdefiniert."
+      },
+      "C8": {
+        "nature": "Dokumentdefekt",
+        "owner": "Owner docs/prd/revyr-endurance-platform.prd.md",
+        "note": "REQ-042 ist RESEARCH_HYPOTHESIS ohne research_plan."
+      },
+      "C12": {
+        "nature": "Dokumentdefekt (bestritten, Pruefung gilt)",
+        "owner": "Owner docs/prd + docs/canvas",
+        "note": "REQ-038 traegt EXPLICIT allein aus der qualitativen Absicht des Ankers CAN-141. Der Prosatext im PRD behauptet 'belegt, nicht hochgestuft'. Die Pruefung widerspricht; nach Rundenregel gilt die Pruefung, nicht der Text."
+      }
+    },
+    "other_validators": [
+      {
+        "tool": "scratchpad/validate_trace.py",
+        "result": "FAILS 0 / WARNS 0",
+        "note": "40 aktive Requirements aus der Registry abgeleitet; TRC-014 und TRC-040 als deprecated gefuehrt"
+      },
+      {
+        "tool": "scratchpad/check_prd.py",
+        "result": "FAILURES 0",
+        "note": "alle CONTRA-Blocking-Werte maschinell nachgerechnet"
+      },
+      {
+        "tool": "scratchpad/selftest_validator.py",
+        "result": "13/13 Werkzeug-Negativkontrollen scharf",
+        "note": "jede Pruefung reagiert nachweislich auf ihren eigenen Defekt"
+      },
+      {
+        "tool": "scratchpad/xcheck.py",
+        "result": "0 Divergenzen",
+        "note": "Registry 123 aktive CAN == Canvas 123 Definitionszeilen; 6 reserved beidseitig"
+      },
+      {
+        "tool": "scratchpad/validate_schema.py",
+        "result": "konform",
+        "note": "Konformitaet zu einem in diesem Lauf selbst verfassten Schema. KEIN Standardnachweis."
+      },
+      {
+        "tool": "scratchpad/verify.py",
+        "result": "FAILS 1",
+        "note": "D-Tally: gezaehlt {linked 28, broken 8, linked-partial 3, not-linked 1} gegen ein im Werkzeug HARTKODIERTES claim {linked 31, broken 6, not-linked 1, linked-partial 2}. Das Dokument ist aktuell, das Literal im Werkzeug ist veraltet. Werkzeugdefekt, NICHT als bestanden gewertet und in dieser Runde bewusst NICHT umgeschrieben (Freeze)."
+      },
+      {
+        "tool": "scratchpad/verify_canvas.py",
+        "result": "1 Problem",
+        "note": "TABLE@187 uneven column counts {6:[187-190], 8:[214]}. Ursache: Zeile 214 (CAN-139) enthaelt maskierte Pipes (\\|) in einem Zitat; der Spaltenzaehler honoriert die Maskierung nicht. Markdown-seitig ist die Tabelle korrekt. Werkzeug-Falschmeldung, ebenfalls nicht umgeschrieben."
+      },
+      {
+        "tool": "scratchpad/oq_check.py",
+        "result": "FAIL",
+        "note": "OQ-012..OQ-016 fallen in den Sammelwert UNCLASSIFIED, weil der Themenklassifikator die fuenf in Runde 3/4 angelegten OQ-IDs nicht kennt. Der Folgebefund 'eine Entscheidung wird von mehr als einer OQ-ID bezeichnet' ist daraus abgeleitet und deshalb NICHT belastbar. Klassifikator nicht erweitert (Freeze)."
+      },
+      {
+        "tool": "scratchpad/AUDIT_points.py",
+        "result": "37 offene §8-Punkte",
+        "note": "davon 7 nie einem Berichtsabschnitt zugeordnet: 22, 23, 26, 27, 30, 41, 44"
+      }
+    ]
+  },
+  "blockers": [
+    {
+      "kind": "BLOCKER",
+      "summary": "Kein benannter Owner/DRI (OQ-002). Alle 40 Requirements tragen einen sichtbaren OWNER-BLOCKER statt eines Verantwortlichen.",
+      "affects": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004",
+        "REQ-005",
+        "REQ-006",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011",
+        "REQ-012",
+        "REQ-013",
+        "REQ-015",
+        "REQ-016",
+        "REQ-017",
+        "REQ-018",
+        "REQ-019",
+        "REQ-020",
+        "REQ-021",
+        "REQ-022",
+        "REQ-023",
+        "REQ-024",
+        "REQ-025",
+        "REQ-026",
+        "REQ-027",
+        "REQ-028",
+        "REQ-029",
+        "REQ-030",
+        "REQ-031",
+        "REQ-032",
+        "REQ-033",
+        "REQ-034",
+        "REQ-035",
+        "REQ-036",
+        "REQ-037",
+        "REQ-038",
+        "REQ-039",
+        "REQ-041",
+        "REQ-042"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "BLOCKER",
+      "summary": "6 reservierte Canvas-Items sind inhaltlich MISSING.",
+      "affects": [
+        "CAN-016",
+        "CAN-017",
+        "CAN-018",
+        "CAN-019",
+        "CAN-020",
+        "CAN-021"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "BLOCKER",
+      "summary": "CAN-025 ('ambitionierte Ausdauersportler:innen') hat im PRD keine USER-ID. Keine ID vergeben — Registry eingefroren.",
+      "affects": [
+        "CAN-025",
+        "REQ-009",
+        "REQ-011",
+        "REQ-032"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "BLOCKER",
+      "summary": "REQ-029 (Sportplatz-Challenges/Bahngold) hat kein Capability-Item, keinen Problembezug und kein Erfolgssignal im Canvas.",
+      "affects": [
+        "REQ-029"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "BLOCKER",
+      "summary": "RISK-013 verlangt einen Einspruchs-/Appeal-Flow, den kein Requirement beschreibt.",
+      "affects": [
+        "RISK-013",
+        "REQ-024"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "BLOCKER",
+      "summary": "Kein Pruefverfahren fuer 'wirksam anonymisiert' (CONTRA-005); die Bedingung ist ohne Verfahren nicht abschliessend testbar.",
+      "affects": [
+        "CONTRA-005",
+        "REQ-017",
+        "REQ-027"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "BLOCKER",
+      "summary": "Keine benannte Betriebsverantwortung fuer den A0-Proxy, obwohl er ab A0 personenbezogene Wegpunkte verarbeitet.",
+      "affects": [
+        "OQ-002",
+        "CAN-096"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "BLOCKER",
+      "summary": "Keine reservierten IDs oberhalb OQ-011, RISK-024 und EV-036. Neue offene Punkte, Risiken und Nachweise stehen ohne ID.",
+      "affects": [
+        "OQ-011",
+        "RISK-024",
+        "EV-036"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "MISSING",
+      "summary": "13 Requirements ohne belegten Schwellenwert (source_type MISSING). Kein Wert geraten.",
+      "affects": [
+        "REQ-007",
+        "REQ-016",
+        "REQ-017",
+        "REQ-021",
+        "REQ-023",
+        "REQ-024",
+        "REQ-026",
+        "REQ-027",
+        "REQ-028",
+        "REQ-029",
+        "REQ-031",
+        "REQ-032",
+        "REQ-033"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "MISSING",
+      "summary": "Die `VC-`Kennungen (value-check-id) haben keine Definitionsdatei; sie bilden zudem nur den Altbestand ab und decken die neu vergebenen Requirements nicht. Keine VC-Nummer erfunden.",
+      "affects": [
+        "docs/traceability.md"
+      ],
+      "decided_by": "Traceability-Owner"
+    },
+    {
+      "kind": "MISSING",
+      "summary": "SRC-001…SRC-004 existieren nicht im Repository; 133 EXPLICIT-Zellen berufen sich darauf, weitere 102 EXPLICIT-Zellen nennen gar keine Quelle. `affects` nennt jetzt die betroffenen REQUIREMENTS, nicht nur die Datei — der Vorbehalt haengt zusaetzlich maschinenlesbar an jedem Requirement unter requirements[].source_provenance.",
+      "affects": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004",
+        "REQ-005",
+        "REQ-006",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011",
+        "REQ-012",
+        "REQ-013",
+        "REQ-015",
+        "REQ-016",
+        "REQ-017",
+        "REQ-018",
+        "REQ-019",
+        "REQ-020",
+        "REQ-021",
+        "REQ-022",
+        "REQ-023",
+        "REQ-024",
+        "REQ-025",
+        "REQ-026",
+        "REQ-027",
+        "REQ-028",
+        "REQ-029",
+        "REQ-030",
+        "REQ-031",
+        "REQ-032",
+        "REQ-033",
+        "REQ-035",
+        "REQ-036",
+        "REQ-037",
+        "REQ-039",
+        "REQ-041",
+        "REQ-042",
+        "docs/SOURCE-MAP.md"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "MISSING",
+      "summary": "`blocking_scope` ist projektweit entfallen (C16), lebt aber ausserhalb der Registry noch in Dokumenten weiter. Der Wertebereichs-Konflikt ist damit gegenstandslos: die vier frueher strittigen Werte sind regulaere Mitglieder von `blocked_activities`.",
+      "affects": [
+        "docs/validation/validation-report.md"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "ASSUMPTION",
+      "summary": "Sechs Zielwerte stuetzen sich allein auf VIS-006 und sind nirgends empirisch hinterlegt.",
+      "affects": [
+        "REQ-010",
+        "REQ-012",
+        "REQ-013",
+        "REQ-019",
+        "REQ-020",
+        "REQ-022"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "OPEN QUESTION",
+      "summary": "Messluecke Telemetrie: alle fuenf PRODUCT_OUTCOME-Signale und die Check-in-Quote sind heute nicht erhebbar; jede Erhebung kollidiert mit CAN-095/REQ-034.",
+      "affects": [
+        "REQ-010",
+        "REQ-013",
+        "REQ-019",
+        "REQ-020",
+        "REQ-022"
+      ],
+      "decided_by": "Nutzer"
+    },
+    {
+      "kind": "BLOCKER",
+      "summary": "Canvas-Items sind vom Nutzer NICHT bestaetigt (6 weiterhin `reserved` und inhaltlich MISSING). Solange das so ist, bleibt der Gesamtstatus BLOCKED_TRACEABILITY. Kein Agent bestaetigt sie stellvertretend.",
+      "affects": [
+        "CAN-016",
+        "CAN-017",
+        "CAN-018",
+        "CAN-019",
+        "CAN-020",
+        "CAN-021"
+      ],
+      "decided_by": "Nutzer"
+    }
+  ],
+  "overall_status": {
+    "value": "BLOCKED_TRACEABILITY",
+    "gate_ready": false,
+    "reason": "BLOCKED_TRACEABILITY, weil die 6 reservierten Canvas-Items (CAN-016..CAN-021) vom Nutzer NICHT bestaetigt sind. Nicht erfuellt im Lauf vom 2026-07-20: C2, C3c, C3d, C7, C8, C12 (32/38 bestanden). Offen bleiben Owner/DRI (OQ-002) fuer alle 40 Requirements und alle 8 NFRs, OQ-003 (Referenzgeraete) und OQ-004 (Karten-/Routinganbieter) als A0-Bedingungen, sowie die in docs/SOURCE-MAP.md gefuehrten Quellenbefunde (5 UNBELEGTE Canvas-Zellen, 85 EXPLICIT-Zellen ohne Quellenangabe, zwei Entscheidungstranchen ohne SRC-ID). Kein Agent hat bestaetigt; true-line-status bleibt pending-watcher, wired-in-prod no, evidence-class none. READY_FOR_AGILETEAM_PLANNING wird ausdruecklich NICHT erreicht und ist aus diesem Zustand nicht erreichbar."
+  },
+  "tooling_freeze": {
+    "frozen_on": "2026-07-20",
+    "scope": [
+      "Metamodell (Achsen, Vokabulare, blocking-Formel status NOT IN [resolved] fail-closed)",
+      "alle Validatoren der aktiven Kette",
+      "Ankersemantik wird ab jetzt ausschliesslich review-gefuehrt (manuelle Tabelle), NICHT maschinell"
+    ],
+    "location_caveat": "KRITISCH: blocking_model.py und die uebrigen Werkzeuge liegen im SCRATCHPAD, NICHT im Repository. Ein Freeze aendert daran nichts. Ausserhalb dieser Session sind sie NICHT verfuegbar und jedes hier berichtete Ergebnis ist dann nicht reproduzierbar. Registry §8 Punkt 13 und Punkt 33 bleiben deshalb OFFEN und werden durch die Scratchpad-Werkzeuge NICHT geschlossen.",
+    "unfreeze_requires": [
+      "neue oder geaenderte SRC-Quelle",
+      "neue ID-Klasse oder neues Achsenvokabular",
+      "Nutzerentscheidung, die eine bestehende Achse umdefiniert",
+      "Ueberfuehrung der Werkzeuge ins Repository (eigener, ausdruecklich beauftragter Schritt)"
+    ],
+    "not_frozen": [
+      "Dokumentinhalte",
+      "Blocker-Auflösungen",
+      "ID-Vergabe durch den Nutzer"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "NEXT-SESSION-PLUMBLINE-PROMPT.md": {
+    "sha256": "3850456a77933093eeb96fc25c0029965491f2a3d97b4621153069a8eb6f7578",
+    "bytes": 4926
+  },
+  "README.md": {
+    "sha256": "16adcc2716e3a2d728f646628f1e229b0f1ed2800676c6a248559d529c698a03",
+    "bytes": 1157
+  },
+  "docs/MISSING-BLOCKER-LEDGER.md": {
+    "sha256": "1994b6a16275fd7f2e8a320f812065e99733a69af743fa192653176d197e4bdf",
+    "bytes": 1625
+  },
+  "docs/SOURCE-MAP.md": {
+    "sha256": "f6598efa8fd21813809b96af7e716b50813749eceb818ea6e6841735cdcd0ba5",
+    "bytes": 857
+  },
+  "docs/canvas/revyr-endurance-platform.canvas.md": {
+    "sha256": "5e578e95ad19b5b6629d1fbed197f19d5577605478ad3a3fc0c1e42c41c84ac3",
+    "bytes": 7674
+  },
+  "docs/gaps/revyr-continuation-gap-analysis.md": {
+    "sha256": "b56c7c572458bc062ad97a871100636d0f64832b52814a9d9a7a4b4a679e86ff",
+    "bytes": 9090
+  },
+  "docs/implementation/revyr-plumbline-continuation-plan.md": {
+    "sha256": "68b724f75f1932682e8604ab297976fb63ab102c9cbd57cb5e76a83d30580346",
+    "bytes": 9458
+  },
+  "docs/prd/revyr-endurance-platform.prd.md": {
+    "sha256": "d7d5ca812bfa23b30c8206ac855d387f1f31420838ae81558d262ffec61a6ee2",
+    "bytes": 28304
+  },
+  "docs/traceability.md": {
+    "sha256": "d54c7239070d907898455c156ea516fec1c3d8c22dffbec3c551b0a97c9a39e1",
+    "bytes": 5435
+  },
+  "docs/validation/validation-report.md": {
+    "sha256": "ff89ad066c1c71529077721692c62125213f642817c3f38b7ebd68674f0f06ac",
+    "bytes": 756
+  },
+  "docs/vision/revyr-endurance-platform.vision.md": {
+    "sha256": "9150790a9861c68f95e100b1b5b2bb8bf9a43d44f115667a4d9ed93e01ab7c11",
+    "bytes": 6464
+  },
+  "intake-package.json": {
+    "sha256": "265c494c19e1934f8adc0f11da8c11367f6a31d6e7afeb594826bf4ef65aef8b",
+    "bytes": 57580
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "expo": "~57.0.7",
+    "expo-dev-client": "~57.0.7",
+    "expo-location": "~57.0.5",
+    "expo-sqlite": "^57.0.1",
+    "expo-status-bar": "~57.0.1",
+    "expo-system-ui": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/jest": "29",
+    "@types/node": "^26.1.1",
+    "@types/react": "~19.2.2",
+    "@types/react-test-renderer": "^19.1.0",
+    "better-sqlite3": "^12.11.1",
+    "jest": "29",
+    "jest-expo": "^57.0.2",
+    "react-test-renderer": "19",
+    "ts-jest": "29",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:leaks": "jest --detectOpenHandles",
+    "test:force": "jest --forceExit",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "prebuild:ios": "expo prebuild --platform ios",
+    "prebuild:android": "expo prebuild --platform android",
+    "build:dev:ios": "eas build --profile development --platform ios --local",
+    "build:dev:android": "eas build --profile development --platform android --local"
+  },
+  "private": true
+}
